@@ -1,0 +1,248 @@
+.PageTitleSection {
+    width: auto;
+    height: 132px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 16px 24px 0;
+    border: solid 1px var(--bw-grey-01);
+    background-color: var(--bw-white);
+    margin-top: 90px;
+  }
+  .titleDashboard {
+    width: auto;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 6px 0;
+  }
+  .Title {
+    height: 44px;
+    flex-grow: 1;
+    font-family: Inter;
+    font-size: 37px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: -0.74px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+  .Button-Primary {
+    width: auto;
+    height: 44px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 13px 32px;
+    border-radius: 4px;
+    background-color: var(--brand-alpha-blue);
+     margin-left: 1100px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    text-align: center;
+    color: var(--bw-white);
+
+  }
+
+
+  .dashboardTabs{
+    width: auto;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 0;
+    margin-left: -30px;
+    margin-top: 10px;
+  }
+  .DashboardlistTopBar {
+    width: 1468px;
+    height: 52px;
+    flex-grow: 0;
+    padding: 0 20px 0 18px;
+    background-color: var(--bw-white);
+    margin: 12px 24px 12px 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .selectAllGroup{
+    width: auto;
+    height: 32px;
+    margin: auto 30px auto -6px;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .checkbox{
+
+    width: 24px;
+    height: 24px;
+    flex-grow: 0;
+    margin: 4px 4px 4px 0;
+    padding: 3.5px;
+  }
+  .selectAll{
+    width: 58px;
+    height: 32px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0 0 0 4px;
+    padding: 8px 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-grey-04);
+
+  }
+
+
+  .inputSearch{
+   width: 476px;
+    height: 32px;
+    margin: 10px 592px 10px 30px;
+    padding: 4px 4.6px 4px 11.4px;
+    border-radius: 4px;
+    border: solid 1px var(--bw-grey-01);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .inputText{
+    width: min-content;
+    height: 24px;
+    flex-grow: 1;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -0.24px;
+    text-align: left;
+    border: none;
+    outline: none;
+  }
+  .iconSeacrh{
+    width: 24px;
+    height: 24px;
+    flex-grow: 0;
+    object-fit: contain;
+  }
+  .iconsSide{
+    width: auto;
+    margin: 14px 24px 14px 86px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .sortBy{
+    width: auto;
+    height: 24px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 4px 0;
+
+    border: none;
+    outline: none;
+  }
+
+  .sortLabel{
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-grey-04);
+  }
+  .vr{
+    margin-left: 24px;
+    margin-top: -12px;
+    height: 50px;
+
+  }
+
+  .pairIcons{
+    margin-left: 24px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+
+  .AllIcon{
+    margin: 0 24px 0 23px;
+
+  }
+
+  .AllIcon-1{
+    margin: 0 -20px 0 0;
+
+  }
+
+  @media screen and (min-width: 420px) and (max-width: 768px) {
+
+    .PageTitleSection{
+      margin-top: 90px;
+      width: 768px;
+    }
+    .Button-Primary{
+      width: auto;
+    height: 24px;
+    padding: 15px 16px;
+      margin-left: 400px;
+    font-size: 10px;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    }
+
+    .DashboardlistTopBar{
+      width: 700px;
+    }
+
+    .inputSearch{
+   width: 336px;
+   margin: 10px 0 10px -20px;
+    }
+
+
+  }

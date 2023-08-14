@@ -1,0 +1,325 @@
+.Advanced-Dashboard-Author-Impact {
+    width: auto;
+    height: auto;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 0 100px;
+    background-color: var(--bw-grey-01);
+  }
+  .PageTitleSection {
+    width: auto;
+    height: 92px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 16px 24px 0;
+    border: solid 1px var(--bw-grey-01);
+    background-color: var(--bw-white);
+  }
+
+
+
+  .backarrow{
+margin-top: 8px;
+cursor: pointer;
+  }
+
+  .TitleFrame {
+    width: 1460px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 296px;
+    margin: 0 0 6px;
+    padding: 6px 0;
+  }
+  .Title {
+    height: 44px;
+    flex-grow: 1;
+    font-family: Inter;
+    font-size: 37px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: -0.74px;
+    text-align: left;
+    color: var(--bw-black);
+    margin-left: -290px;
+  }
+
+  .HeaderIcons{
+    width: 136px;
+    height: auto;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: -15px;
+    margin-top: -5px;
+  }
+  .topIcons_Text{
+    width: 40px;
+    height: auto;
+    margin-left: 5px;
+
+  }
+
+  .topIcons{
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  text-align: center;
+  color: dodgerblue;
+  border: 3px solid var(--bw-grey-01);
+
+  }
+
+  .IconText{
+    font-size: 8px;
+    width: auto;
+    height: auto;
+    font-weight: 700;
+    color: dodgerblue;
+    margin-top: 10px;
+  }
+  .LeftPannel{
+    width: 320px;
+    height: 680px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .xAdvancedBack {
+    width: auto;
+    height: 44px;
+    flex-grow: 0;
+    padding: 13px 273px 13px 15px;
+    text-align: center;
+    background-color: var(--bw-white);
+  }
+  .Back {
+    width: 36px;
+    height: 18px;
+    /* margin: 0 0 0 12px; */
+    margin-left: 40px;
+    margin-bottom:90px ;
+    margin-top: -150px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    text-align: center;
+    color: var(--bw-black);
+  }
+  .SidePannelTemplateSelector {
+  width: 294px;
+  height: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 10px 0;
+  padding: 16px;
+  background-color: var(--bw-white);
+  }
+  .Path-160 {
+  width: 18px;
+  height: 12.1px;
+  flex-grow: 0;
+  background-color: #666;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  }
+  .Group-842 {
+  width: 18px;
+  height: 12.1px;
+  }
+  .Frame {
+  width: auto;
+  height: 12.1px;
+  margin-top: 5px;
+  }
+  .LeftPannel {
+      width: 320px;
+      height: 680px;
+      flex-grow: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+
+
+
+    .brand{
+      display: flex;
+      flex-direction: column;
+      line-height: 1cm;
+    }
+
+    .card{
+
+      line-height: 1.33;
+      letter-spacing: -0.24px;
+    }
+
+
+    .Group-1{
+      width: auto;
+      height: 24px;
+      flex-grow: 0;
+      display: flex;
+      flex-direction: row;
+    }
+
+
+   .info1{
+    width: 260px;
+    height: 32px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: var(--bw-grey-04);
+  }
+
+
+
+
+    .template-helper{
+      width: 119px;
+      height: 24px;
+      flex-grow: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 4px 10px;
+      border-radius: 12px;
+      background-color: var(--bw-grey-01);
+    }
+    .chart{
+      width: 99px;
+      height: 16px;
+      flex-grow: 0;
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 500;
+      /* margin-top: 3px; */
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: -0.24px;
+      text-align: center;
+      color: var(--bw-black);
+    }
+
+
+
+
+
+
+
+  label{
+    width: auto;
+    height: 18px;
+    flex-grow: 0;
+    margin: 6px 0 3px 6px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: var(--brand-alpha-blue);
+  }
+
+
+  /* Media Query */
+
+  @media screen and (min-width: 420px) and (max-width: 768px) {
+
+    .TitleFrame {
+      width: 700px;
+    }
+
+    .Title {
+      width:stretch;
+      font-size: 30px;
+    }
+
+    .HeaderIcons{
+      width: 208px;
+      margin-left: -100px;
+    }
+    .LeftPannel{
+      width: 150px;
+      margin-left: 6px;
+      z-index: 1;
+    }
+    .xAdvancedBack{
+    padding: 13px 220px 13px 15px;
+    }
+    .brand{
+      width: 240px;
+      height: 105px;
+    }
+
+    .Group-1{
+      margin-left: -20px;
+    }
+
+    label{
+    font-size: 12px;
+    }
+
+    .info1{
+    font-size: 10.5px;
+    }
+
+
+    .template-helper{
+      width: 100px;
+      margin-left: -3px;
+      margin-top: 5px;
+    }
+    .chart{
+      font-size: 9px;
+      text-align: center;
+    }
+
+
+  }

@@ -1,0 +1,22 @@
+{
+    "data":[
+        {
+            "title":"",
+            "content":"",
+            "matchesDetails":{
+                "matches":["",""],
+                "reach":"",
+                "ave":"",
+                "articles":""
+            },
+            "img":"",
+            "publishDetails":{
+                "on":"",
+                "chan":"",
+                "site":"",
+                "others":[]
+            }
+
+        }
+    ]
+}

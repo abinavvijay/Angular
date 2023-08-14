@@ -1,0 +1,35 @@
+<div style="position:relative">
+  <div class="card me-3 " (click)="ontoggle('options')">
+    <div class="card-body">
+      <div class="ddl-label mb-1 d-flex flex-row justify-content-between">{{label}}
+        <span class="icon-1 material-symbols-outlined">
+          arrow_drop_down
+        </span>
+      </div>
+      <span class="selection-chips">{{selectionTextPrefix}} {{selectionLabel}}</span>
+      <span (mouseover)="ontoggle('chips')" (mouseout)="ontoggle('chips')" class="selection-chips-white">...</span>
+    </div>
+
+  </div>
+
+
+
+  <div style="position:absolute; z-index: 1; cursor:pointer" class="card me-2 rich-ddl"
+    [hidden]="state<1 || (state==2 && selectedOptions.length==0)">
+    <div [hidden]="state < 1 || state > 1" class="mt-0">
+      <div *ngFor="let t of datasource;" class="rich-ddl-item"><span class=" ms-2 p-1"><input #itm type="checkbox"
+            [value]="t[value]" [checked]="checkIfSelected(t.text)"
+            (change)="onselectionChange(t.text, $event   )" /></span><span class=" ms-2 p-1">{{t.text}}</span>
+      </div>
+      <div class="m-2">
+        <span style="margin-right: auto;"></span> <button class="btn btn-primary" (click)="onOK()"> Ok</button>
+      </div>
+    </div>
+    <div class="mt-0" [hidden]="state!=2">
+      <span class="chip" *ngFor="let c of selectedOptions">{{c}}</span>
+    </div>
+  </div>
+
+
+
+</div>

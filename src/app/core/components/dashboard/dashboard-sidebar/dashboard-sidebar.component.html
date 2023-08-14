@@ -1,0 +1,54 @@
+<div class="Advanced-Dashboard-Author-Impact d-flex flex-column">
+  <!-- <div class="PageTitleSection">
+      <div class="TitleFrame">
+          <span class="backarrow material-symbols-outlined" routerLink="/dashboard">
+            keyboard_backspace
+            </span>
+        <span class="Title Headline3">Brand Dashboard </span>
+        <div class="HeaderIcons ">
+          <div class="topIcons_Text btn col">
+            <span class="topIcons material-symbols-outlined">
+                post_add
+                </span>
+            <span class="IconText">SAVE</span>
+          </div>
+          <div class="topIcons_Text btn">
+            <span class="topIcons material-symbols-outlined">
+                more_vert
+                </span>
+            <span class="IconText">MORE</span>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  <div class="d-flex flex-row">
+    <nav class="container LeftPannel">
+      <div
+        class="card btn bg-white"
+        *ngFor="let sideBar of sideBars"
+        [routerLink]="sideBar.route"
+      >
+        <div class="card-body brand">
+          <div class="Group">
+            <img
+              [src]="sideBar.icon"
+              src="{{ sideBar.icon }}"
+              alt=""
+              class=""
+            />
+            <label for="" class="subtitle">{{ sideBar.title }}</label>
+          </div>
+          <div class="details d-flex flex-column mt-2">
+            <span class="info">
+              {{ sideBar.description }}
+            </span>
+            <div class="template-helper">
+              <span class="chart"> {{ sideBar.countIncludes }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

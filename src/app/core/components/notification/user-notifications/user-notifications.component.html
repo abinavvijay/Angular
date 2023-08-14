@@ -1,0 +1,37 @@
+<div class="container d-flex flex-column">
+  <div class="notification d-flex flex-column">
+    <span class="material-symbols-outlined" (click)="closeNotification()"> close </span>
+    <div class="d-flex flex-row justify-content-between">
+      <span class="title"> Notifications </span>
+      <select name="" id="" label="Filter">
+        <option value="">Dashboard</option>
+        <option value="">Search</option>
+        <option value="">Other</option>
+      </select>
+    </div>
+  </div>
+  <div class="newNotification d-flex flex-column">
+    <div class="notificationCount d-flex flex-column">
+      <div class="d-flex flex-row" >
+      <span class="Label-AllCaps"  > {{count}}    </span>
+      <span class="New-Notifications SmallText"> New Notifications </span>
+    </div>
+      <div class="help-cards" *ngFor="let notify of notification">
+        <div class="NotificationTitle d-flex flex-row justify-content-between" >
+          <span class="Alert-msg">
+            {{notify.title}}
+          </span>
+          <div class="Ellipse"></div>
+          </div>
+
+          <div class="description ">
+          <img src="" alt="" class="notificationImage" />
+          <span class="notificationDescription">
+            {{notify.content}}
+          </span>
+          </div>
+          <span class="notificationTime">{{notify.created_date | date: 'shortTime'}} </span>
+        </div>
+      </div>
+  </div>
+</div>

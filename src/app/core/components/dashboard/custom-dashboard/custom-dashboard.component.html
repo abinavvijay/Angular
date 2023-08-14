@@ -1,0 +1,156 @@
+<!-- Customs Dashboard -->
+<div class="d-flex flex-row customDashboard">
+    <iv-dashboard-sidebar></iv-dashboard-sidebar>
+    <div class="container-fluid card custom-dashboard">
+      <div class="brand card-body">
+        <div class="topDashboard">
+          <span class="Dashboard-Name"> DashBoard Name </span>
+          <div class="download">
+            <select name="" id="" class="select">
+              <option selected>DownLoad</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <label class="share" for="">Share</label>
+            <span class="icon material-symbols-outlined">
+                more_vert
+                </span>
+          </div>
+        </div>
+        <div class="Search_time">
+          <div class="search d-flex flex-column">
+            <div class="d-flex flex-row">
+              <label class="Select_Search"> Select Search </label>
+              <span class="icon-1 material-symbols-outlined">
+                arrow_drop_down
+                </span>
+            </div>
+            <div class="d-flex flex-row">
+              <button class="subSearch">Covid Vaccine</button>
+              <span class="edit"> Edit Sources </span>
+            </div>
+          </div>
+          <div class="comp_keywords">
+            <label class="Add-Competition-Keywords">
+              Add Competition Keywords
+            </label>
+
+            <!-- <app-chips [(ngModel)]="comp_items" [removable]="true">
+            </app-chips> -->
+
+
+          </div>
+          <div class="comp_keywords people_keywords">
+            <label class="Add-Competition-Keywords Add-Peoples-Keywords">
+              Add Person Name
+            </label>
+
+            <!-- <iv-chips [(ngModel)]="people_items" [removable]="true">
+            </iv-chips> -->
+
+
+          </div>
+
+
+          <div class="time">
+            <div class="d-flex flex-row">
+              <label class="Timeline" for="Timeline"> Timeline </label>
+              <span class="icon-2 material-symbols-outlined">
+                arrow_drop_down
+                </span>
+            </div>
+            <div class="d-flex flex-row time_days">
+              <button class="btn label" for="">1D</button>
+              <button class="btn label" for="">1W</button>
+                <button class="btn label" for="">1M</button>
+              <button class="btn label" for="">3M</button>
+              <button class="btn label" for="">6M</button>
+              <button class="btn label" for="">1Y</button>
+              <button class="btn label" for="">Custom</button>
+            </div>
+          </div>
+        </div>
+        <div class="widgets">
+          <div class="icluded">
+            <label for=""> Included Widgets </label>
+          </div>
+          <div class="addOn d-flex flex-row">
+            <div class="part-1">
+              <div class="outlet-1" (click)="openBottomSheet()">
+                <img src="../../../../assets/widget/add.png" alt="image" />
+                <label class="article" for="">Add More</label>
+              </div>
+              <!-- <div class="outlet">
+                <img src="../../../../assets/widget/add.png" alt="image" />
+                <label class="article" for="">Voulme Analysis</label>
+              </div> -->
+              <!-- <div class="outlet">
+                <img src="../../../../assets/widget/icon.png" alt="image" />
+                <label class="article" for="">Sentiment Analysis</label>
+              </div>
+              <div class="outlet">
+                <img src="../../../../assets/widget/icon.png" alt="image" />
+                <label class="article" for="">Sentiment Over Time</label>
+              </div>
+              <div class="outlet">
+                <img src="../../../../assets/widget/icon.png" alt="image" />
+                <label class="article" for="">Coverage Over Time</label>
+              </div>
+              <div class="outlet">
+                <img src="../../../../assets/widget/icon.png" alt="image" />
+                <label class="article" for="">Media Type</label>
+              </div>
+              <div class="outlet">
+                <img src="../../../../assets/widget/icon.png" alt="image" />
+                <label class="article" for="">Reach Over Time</label>
+              </div>
+              <div class="outlet-1">
+                <img src="../../../../assets/widget/icon.png" alt="image" />
+                <label class="article" for="">Article Sentiment</label>
+              </div> -->
+            </div>
+            <!-- <div class="part-2">
+              <div class="outlet">
+                <img src="../../../../assets/widget/icon.png" alt="image" />
+                <label class="article" for="">SOV</label>
+              </div>
+              <div class="outlet">
+                <img src="../../../../assets/widget/icon.png" alt="image" />
+                <label class="article" for="">Coverage by Journalist</label>
+              </div>
+              <div class="outlet">
+                <img src="../../../../assets/widget/icon.png" alt="image" />
+                <label class="article" for="">Coverage by Source</label>
+              </div>
+              <div class="outlet">
+                <img src="../../../../assets/widget/icon.png" alt="image" />
+                <label class="article" for="">SOV by Media Type</label>
+              </div>
+              <div class="outlet">
+                <img src="../../../../assets/widget/icon.png" alt="image" />
+                <label class="article" for="">Companies Mentioned</label>
+              </div>
+              <div class="outlet">
+                <img src="../../../../assets/widget/icon.png" alt="image" />
+                <label class="article" for="">Top Journalist by Sentiment</label>
+              </div>
+              <div class="outlet">
+                <img src="../../../../assets/widget/icon.png" alt="image" />
+                <label class="article" for="">Top Source by Sentiment</label>
+              </div>
+              <div class="outlet">
+                <img src="../../../../assets/widget/icon.png" alt="image" />
+                <label class="article" for="">Popular Topics</label>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="div_button">
+          <button class="comp_button">Generate Custom Analysis</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+

@@ -1,0 +1,18 @@
+.InputForm{
+  background-color: white;
+  width: 620px;
+  height: 400px;
+  color: black;
+}
+
+.inputField{
+  margin-bottom: 130px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

@@ -1,0 +1,36 @@
+.menu-index{
+    width: 180px;
+    height: 52px;
+    vertical-align: middle;
+    background-color: var(--bw-grey-01)
+}
+
+.left-flat-button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.right-flat-button{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.seatch-text{
+    width: calc(100% - 292px);
+    height: 52px;
+    flex-grow: 0;
+    border: solid 1px var(--bw-grey-01);
+    background-color: var(--bw-white);
+    font-family: 'Inter';
+}
+
+.search-button-primary{
+    width: 112px;
+    height: 52px;
+    background-color: var(--brand-alpha-blue);
+    border-radius: 0px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+  
+}
+

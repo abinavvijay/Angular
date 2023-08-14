@@ -1,0 +1,148 @@
+<div class="d-flex flex-row">
+    <iv-settings></iv-settings>
+    
+    <div class="layout">
+      <div class="savedSearchlistTopBar">
+        <div class="selectAllGroup">
+          <input type="checkbox" name="" id="" class="checkbox" />
+          <span class="selectAll">Select All</span>
+        </div>
+        <div class="inputSearch">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="inputText"
+            placeholder="Search in dashboards"
+          />
+          <span class="iconSeacrh material-symbols-outlined"> search </span>
+
+        </div>
+        <div class="Button-Tertiary btn btn-primary">
+          <span class="addIcon material-symbols-outlined"> add </span>
+
+          <label class="Add-New-Tag" (click)="showDialog()"> Add New Theme </label>
+        </div>
+      </div>
+    
+      <div class="table-responsive-lg">
+        <table class="table table-lg">
+          <thead>
+            <tr>
+              <th scope="col">
+                <span class="th-1"> Theme Name</span>
+              </th>
+              <th scope="col">
+                <span class="th-2"> Keywords </span>
+              </th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="body">
+              <td>
+                <div class="tags d-flex flex-row">
+                  <input type="checkbox" class="checkbox" />
+                  <div class="tagName d-flex flex-column">
+                    <label class="Tag-Name"> Theme Name 01 </label>
+                    <span class="Created-by-Anuran SmallText">
+                      Created by Anuran
+                    </span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="keywords">
+                  McD OR BK OR Starbucks McD OR BK OR Starbucks McD OR BK OR
+                  Starbucks
+                </div>
+              </td>
+              <td >
+                <div class="icons">
+                  <!-- <fa-icon [icon]="faEdit" class="icons-1"></fa-icon> -->
+                  <span class="icons-1 material-symbols-outlined" >
+                    edit_square
+                  </span>
+                </div>
+              </td>
+              <td >
+                  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="icons-1">
+                    <mat-icon >more_vert</mat-icon>
+                  </button>
+                  <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                      <span>Edit</span>
+                    </button>
+                    <button mat-menu-item >
+                      <span>Delete</span>
+                    </button>
+                    <button mat-menu-item>
+                      <span>Download Excel</span>
+                    </button>
+                    <button mat-menu-item>
+                      <span>Download Word</span>
+                    </button>
+                    <button mat-menu-item>
+                      <span>Download CSV</span>
+                    </button>
+                  </mat-menu>
+    
+              </td>
+            </tr>
+            <tr class="body">
+              <td>
+                <div class="tags d-flex flex-row">
+                  <input type="checkbox" class="checkbox" />
+                  <div class="tagName d-flex flex-column">
+                    <label class="Tag-Name"> Theme Name 02 </label>
+                    <span class="Created-by-Anuran SmallText">
+                      Created by Anuran
+                    </span>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="keywords">
+                  McD OR BK OR Starbucks McD OR BK OR Starbucks McD OR BK OR
+                  Starbucks
+                </div>
+              </td>
+              <td>
+                <div class="icons">
+                  <!-- <fa-icon [icon]="faEdit" class="icons-1"></fa-icon> -->
+                  <span class="icons-1 material-symbols-outlined" >
+                    edit_square
+                  </span>
+                </div>
+              </td>
+              <td >
+                  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="icons-1">
+                    <mat-icon>more_vert</mat-icon>
+                  </button>
+                  <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                      <span>Edit</span>
+                    </button>
+                    <button mat-menu-item >
+                      <span>Delete</span>
+                    </button>
+                    <button mat-menu-item>
+                      <span>Download Excel</span>
+                    </button>
+                    <button mat-menu-item>
+                      <span>Download Word</span>
+                    </button>
+                    <button mat-menu-item>
+                      <span>Download CSV</span>
+                    </button>
+                  </mat-menu>
+    
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    </div>
+    

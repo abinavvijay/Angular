@@ -1,0 +1,14 @@
+<div>
+    <p>Start a new Search</p>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+        <mat-form-field class="example-full-width" appearance="outline">
+            <input matInput placeholder="Ex. Covid" formControlName="keyword">
+            <mat-error *ngIf="form.get('keyword')?.hasError('required')">
+                Enter Search Keyword
+            </mat-error>
+        </mat-form-field>
+        <div class="mb-4">
+            <button mat-raised-button color="primary" class="button">Search</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,361 @@
+.NewDashboard {
+  background-color: var(--bw-grey-01);
+  overflow-y: auto;
+}
+.TitleSection {
+  width: auto;
+  height: 122px;
+  flex-grow: 0;
+  justify-content: space-between;
+  padding: 16px 24px 0;
+  border: solid 1px var(--bw-grey-01);
+  background-color: var(--bw-white);
+  margin-top: 0px;
+}
+
+.TitleName {
+  height: 44px;
+  flex-grow: 1;
+  font-family: Inter;
+  font-size: 37px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: -0.74px;
+  text-align: left;
+  color: var(--bw-black);
+}
+
+.subtitle {
+  height: 44px;
+  flex-grow: 1;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: var(--bw-grey-04);
+}
+
+.cancelButton {
+  width: 114px;
+  height: 44px;
+  flex-grow: 0;
+  gap: 10px;
+  padding: 13px 32px;
+  border-radius: 4px;
+  background-color: #e4e9fb;
+}
+
+.cancelButton span {
+  width: 50px;
+  height: 18px;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: var(--brand-alpha-blue);
+}
+
+/* Top section */
+.Topics-1 {
+  width: auto;
+  height: 311px;
+  margin: 12px 12px 12px 12px;
+  padding: 32px 24px 47px 24px;
+  background-color: var(--bw-white);
+  display: flex;
+  flex-direction: row;
+}
+
+.StandardTemplates {
+  width: auto;
+  height: 311px;
+}
+
+.standardTitle {
+  width: 162px;
+  height: 20px;
+  margin: 0 auto 0px 36px;
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: -0.34px;
+  text-align: left;
+  color: var(--bw-black);
+}
+
+/* For all Descriptions css */
+.description {
+  width: 417px;
+  height: 40px;
+  margin: 20px auto 32px 36px;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: -0.26px;
+  text-align: left;
+  color: var(--bw-grey-04);
+}
+
+.Curated {
+  width: 700px;
+  height: 120px;
+  flex-grow: 0;
+  /* margin: 0px 45px 0 0; */
+  padding: 12px;
+  border-radius: 8px;
+  border: solid 1px var(--bw-grey-01);
+}
+
+.CuratedTitle {
+  width: auto;
+  height: 16px;
+  flex-grow: 0;
+  margin: 0 auto 16px 0;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: -0.26px;
+  text-align: left;
+  color: var(--bw-black);
+  white-space: nowrap;
+}
+
+.Dashboards {
+  gap: 12px;
+}
+.DashboardButtons {
+  width: 160px;
+  height: 64px;
+  flex-grow: 0;
+  padding: 20px 21px 20px 16px;
+  border-radius: 8px;
+  background-color: var(--brand-alpha-blue);
+}
+
+.chartImage {
+  width: 16px;
+  height: 16px;
+  flex-grow: 0;
+  background-color: var(--bw-white);
+  border-radius: 8px;
+  margin-top: 3px;
+}
+
+.DashboardTitle {
+  width: auto;
+  height: 18px;
+  margin: 3px 26px 3px 6px;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: var(--bw-white);
+  cursor: pointer;
+}
+
+/* Advanced dashboard Section css */
+
+.AdvanceSection {
+  width: auto;
+  height: 311px;
+  margin-left: auto ;
+}
+
+.AdvanceTemplate {
+  width: 288px;
+  height: 311px;
+  margin-right: 46px;
+}
+
+.AdvancedTitle {
+  width: 170px;
+  height: 20px;
+  margin: 0 152px 0px 57px;
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: -0.34px;
+  text-align: left;
+  color: var(--bw-black);
+}
+
+.description.Advance {
+  width: 257px;
+  margin: 20px 46px 32px 57px;
+}
+
+.ForTraditional {
+  width: 288px;
+  height: 120px;
+  flex-grow: 0;
+  margin: 0px 46px 0 45px;
+  padding: 12px;
+  border-radius: 8px;
+  border: solid 1px var(--bw-grey-01);
+}
+
+.ForTraditionalTitle {
+  width: 129px;
+  height: 16px;
+  flex-grow: 0;
+  margin: 0 135px 16px 0;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: -0.26px;
+  text-align: left;
+  color: var(--bw-black);
+}
+
+.advanceButton {
+  width: 264px;
+  height: 64px;
+  flex-grow: 0;
+  padding: 20px 21px 20px 16px;
+  border-radius: 8px;
+  background-color: var(--chart-green);
+}
+
+.DashboardTitle.Advance {
+  margin: 3px 101px 3px 6px;
+}
+
+.advanceButton.Custom {
+  background-color: var(--brand-alpha-blue);
+}
+.description.Custom {
+  width: 257px;
+  margin: 20px 19px 32px 58px;
+}
+
+.DashboardTitle.Custom {
+  margin: 3px 116px 3px 6px;
+}
+
+/* Tips section css*/
+
+.Topics-2 {
+  width: auto;
+  height: 310px;
+  margin: 0 12px 12px 12px;
+  padding: 32px 43.8px 52px 36px;
+  background-color: var(--bw-white);
+}
+
+.TipsTitle {
+  width: 359px;
+  height: 20px;
+  margin: 0 754px 20px 0;
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: -0.34px;
+  text-align: left;
+  color: var(--bw-black);
+}
+
+.TipDescription {
+  width: 417px;
+  height: 40px;
+  margin: 20px 696px 0px 0;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: -0.26px;
+  text-align: left;
+  color: var(--bw-grey-04);
+}
+
+.viewTutorial {
+  width: 81px;
+  height: 32px;
+  gap: 10px;
+  margin: 114px 0px 0 0;
+  padding: 8px 0;
+  border: none;
+  background-color: var(--bw-white);
+}
+
+.viewTutorial label {
+  width: 81px;
+  height: 16px;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: -0.26px;
+  text-align: right;
+  color: var(--brand-alpha-blue);
+  cursor: pointer;
+}
+
+.standdiv {
+  height: auto;
+  width: auto;
+  margin-left: auto;
+}
+
+
+
+/* Media Query */
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+
+  .Topics-1 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .Curated {
+    margin-left: -10px;
+  }
+
+  .AdvanceSection {
+    margin-left: -45px;
+  }
+
+  .standdiv {
+    height: auto;
+    width: auto;
+    margin-left: -730px;
+  }
+}

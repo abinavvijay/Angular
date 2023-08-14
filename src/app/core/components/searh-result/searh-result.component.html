@@ -1,0 +1,64 @@
+<div class="search-figure mt-1">
+    <iv-searh-result-bar [(currentPage)]="currentTab" (currentPageChange)="ngOnChanges1()" (onDownload)="download()" (click)="newsletter()">
+    </iv-searh-result-bar>
+
+</div>
+<ng-container *ngIf="currentTab=='All Results'">
+    <div class="search-figure mt-1">
+
+        <iv-pager [pageCount]="pages" [(currentPage)]="currentPage" (currentPageChange)="onPageChange($event)"
+            (onSortingChange)="onSort($event)" (selectAllEvent)="onSelectAll($event)"></iv-pager>
+    </div>
+    <div class="mt-1">
+        <iv-search-item-collection [items]="_source.data.items" [currentPage]="currentPage" [selectedAll]="selectedAll" (selectionChanged)="onSelectionChanged($event)"></iv-search-item-collection>
+    </div>
+</ng-container>
+<ng-container *ngIf="currentTab=='Dashboard View'">
+    <div style="background-color: var(--bw-grey-01) ; ">
+        <div class=" p-4 pb-0 pt-1 search-figure">
+            <div class="dark-grey-text mb-4">Sentiment</div>
+            <iv-result-figure class="inline spacer200px" figure="{{sentimentSummary.positive|thousandSuff:1}}"
+                [isPositive]="value1" figureType="Positive Articles" percentage={{posChanges}}>
+             </iv-result-figure>
+
+            <iv-result-figure class="inline spacer200px" figure="{{sentimentSummary.negative|thousandSuff:1}}"
+                [isPositive]="value2" figureType="Negative Articles" percentage={{negChanges}}>
+            </iv-result-figure>
+
+            <iv-result-figure class="inline spacer200px" figure="{{sentimentSummary.neutral|thousandSuff:1}}"
+                [isPositive]="value3" figureType="Neutral Articles" percentage={{neuChanges}}>
+             </iv-result-figure>  
+
+        </div>
+    </div>
+
+
+    <div style="display:table-row ; " class="dashboard_widgets">
+
+        <div style="width: calc(100%)">
+            <div style="width: calc(50%);display: inline-block;">
+                <iv-top5 [title]="'Top 5 Articles by Reach'" [items]="top5Reach" (onDownload1)="downloadTop5()"></iv-top5>
+
+            </div>
+
+            <div style="width: calc(50%);display: inline-block;">
+                <iv-top5 [title]="'Top 5 Articles by Ave'" [items]="top5Ave" (onDownload1)="downloadTop5()" ></iv-top5>
+            </div>
+        </div>
+        <ng-container *ngFor="let widget of widgets; let i = index">
+
+            <iv-tableau serverUrl="https://devamx.com" report="{{widget.widget}}" [ticket]="widget.token" site="site01"
+                [filters]=dashboardFilters() style="display: inline-flex; " [options]="options" [id]="i">
+            </iv-tableau>
+
+        </ng-container>
+
+
+
+    </div>
+</ng-container>
+<ng-container *ngIf="currentTab=='Create New Dashboard'">
+
+    Create new Dashboard
+
+</ng-container>

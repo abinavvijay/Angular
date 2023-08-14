@@ -1,0 +1,448 @@
+.container{
+    width: stretch;
+    height: 1100px;
+    flex-grow: 0;
+    padding: 12px 0 22px;
+    background-color: var(--bw-white);
+       display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 105px;
+      margin-left: -1212px;
+      margin-right: 12px;
+      z-index: 0;
+  }
+
+
+  .matTabGroup{
+  width: stretch;
+  }
+
+  .Notification-Settings{
+    width: auto;
+    height: 28px;
+    margin: 24px 204px 12px 24px;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.27;
+    letter-spacing: -0.44px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+
+  .discription{
+    width: 494px;
+    height: 20px;
+    margin: 12px 491px 12px 24px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-grey-04)
+  }
+
+  hr{
+    width: stretch;
+    margin: 23px 24px 24px 24px;
+  }
+
+  .emailDiscription{
+    width: auto;
+    height: 274px;
+      width: 244px;
+      height: 56px;
+      margin: 4px 174px 249px 24px;
+    }
+
+
+  .Email{
+    width: 180px;
+    height: 16px;
+    margin: 0 119px 8px 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+
+  .discription-1{
+    width: auto;
+    height: 32px;
+    margin: 8px 0 0;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: var(--bw-grey-04);
+  }
+
+  .toggleUpdates{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 4px 226px 31px 174px;
+    padding: 0;
+  }
+
+  .toggleGroup{
+    width: 341px;
+    height: 42px;
+    flex-grow: 0;
+    padding: 0 9px 2px 0;
+    margin-bottom: 18px;
+  }
+
+  /* Toggle button css */
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 22px;
+  }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 24px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    bottom: 4px;
+    top: 2px;
+    left: -3.5px;
+    border-radius: 14px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(24px);
+  }
+  /* ends */
+
+
+
+  .News-and-Updates{
+    width: 125px;
+    height: 16px;
+    margin: 0 151px 8px 16px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+
+  .News-about{
+    width: 276px;
+    height: 16px;
+    margin: 2px 0 0 16px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: var(--bw-grey-04);
+  }
+
+  .hr{
+    width: stretch;
+    margin: -16px 24px 24px 24px;
+  }
+
+  .Button-Tertiary{
+    width: 183px;
+    height: 32px;
+    width: 183px;
+    height: 16px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: right;
+    margin: 16px 235px 0 24px;
+  }
+
+  a{
+    color: var(--brand-alpha-blue);
+  }
+
+  .Alert-card{
+    width: 269px;
+    height: auto;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+    border: solid 1px var(--bw-grey-01);
+    background-color: var(--bw-white);
+    margin: 24px 0 12px 24px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Covid-Vaccine {
+    width: 229px;
+    height: 20px;
+    margin: 4px 20px 10px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+
+  .matMenu {
+    width: 24px;
+    height: 24px;
+    margin: 0 12px 0px -40px;
+    border: none;
+  background-color: var(--bw-white);
+  }
+
+  .discription-2{
+    width: 229px;
+    height: 48px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: var(--bw-grey-03);
+    margin: 10px 10px 20px 20px
+  }
+
+
+
+  .Alerts-Active{
+    width: 229px;
+    height: 16px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: #2db056;
+    margin: 12px 8px 20px 20px;
+  }
+
+  .Search-volume{
+    width: 200px;
+    height: 16px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-black);
+    margin: 0 0 20px 20px;
+  }
+
+
+  .Alerts-Active.Paused{
+    color: var(--direction-neg);
+  }
+
+  .Search-volume.Paused{
+    color: var(--bw-grey-03);
+  }
+
+
+  .hr-1{
+    width: auto;
+    height: 1px;
+    margin: 437px 24px 16px;
+    background-color: var(--bw-grey-01);
+  }
+
+
+  @media screen and (min-width: 420px) and (max-width: 768px) {
+
+  .noti{
+    width: 530px;
+  }
+
+    .container{
+      width: 530px;
+      margin-top: 108px;
+      margin-left: -1280px;
+    }
+
+    .Notification-Settings{
+      font-size:13px ;
+    }
+
+    .discription{
+      font-size: 10px;
+      width: 300px;
+    }
+
+    .Email{
+      font-size: 8px;
+      width: 60px;
+    }
+
+    .discription-1{
+      font-size: 7px;
+
+    }
+
+    .toggleGroup{
+      margin-left: -350px;
+      /* width: 600px; */
+    }
+
+    .switch{
+      font-size: 8px;
+      width: 45;
+    }
+
+    .News-and-Updates{
+      font-size: 10px;
+    }
+
+    .News-about{
+      font-size: 10px;
+    }
+
+    .totalCards{
+      width: 510px;
+      /* display: flex;
+      flex-direction: row; */
+    }
+
+    .Alert-card{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .Covid-Vaccine{
+      font-size: 10px;
+      margin-left: -205px;
+      /* margin-left: 180px; */
+    }
+
+    .discription-2{
+      font-size: 9px;
+      width: 100px;
+      margin-left: -2px;
+    }
+
+    .Alerts-Active{
+      font-size: 10px;
+      margin-left: -2px;
+
+    }
+
+    .Search-volume{
+      font-size: 7px;
+      margin-left: -2px;
+
+    }
+
+    .matMenu{
+      margin-left: -350px;
+    }
+
+
+    .matMen{
+      margin-right: -550px;
+      /* margin-left: -600px; */
+    }
+
+
+
+
+    .header{
+      /* display: flex; */
+      /* flex-direction: row; */
+      justify-content:space-evenly;
+    }
+
+
+  }

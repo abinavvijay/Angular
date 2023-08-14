@@ -1,0 +1,283 @@
+
+/* .sidebar{
+  margin-left: -80rem;
+} */
+
+
+.layout{
+    width: auto;
+    height: auto;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2px;
+    padding: 0;
+    margin: 105px 12px 0px -1212px;
+  }
+  
+  .savedSearchlistTopBar{
+    width: auto;
+    height: 68px;
+    padding: 16px 96px 16px 18px;
+    background-color: var(--bw-white);
+    display: flex;
+    flex-direction: row;
+  
+  }
+  
+  .selectAllGroup{
+    width: auto;
+    height: 32px;
+    margin: auto 30px auto -6px;
+    display: flex;
+    flex-direction: row;
+  
+  }
+  
+  .checkbox{
+    width: 17px;
+    height: 17px;
+    flex-grow: 0;
+    padding: 3.5px;
+    margin: 9px 7px  auto 22px;
+  }
+  
+  .selectAll{
+    width: 60px;
+    height: 16px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-grey-04);
+    text-align: center;
+    margin: 11px 10px  auto 7.5px;
+  
+  }
+  
+  
+  .inputSearch{
+    width: 480px;
+    height: 32px;
+    margin: 5px 350px 5px 40px;
+    padding: 4px 4.6px 4px 11.4px;
+    border-radius: 4px;
+    border: solid 1px var(--bw-grey-01);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .inputText{
+    width: auto;
+    border: none;
+    outline: none;
+    height: 24px;
+    flex-grow: 1;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -0.24px;
+    text-align: left;
+  
+  }
+  
+  .iconSeacrh{
+    width: 24px;
+    height: 24px;
+    flex-grow: 0;
+    object-fit: contain;
+  }
+  
+  .Button-Tertiary{
+    width: auto;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
+    margin: 0 -80px 0 -80px;
+    padding: 10px 12px 10px 10px;
+    border-radius: 4px;
+    background-color: #486ce2;
+  }
+  .addIcon{
+    color: white;
+    margin-top: -3px;
+  }
+  
+  .Add-New-Tag{
+    width: 100px;
+    height: 16px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: right;
+    color: var(--bw-white);
+  }
+  
+  table{
+    width: 1124px;
+      border-collapse:separate;
+      border-spacing: 0 2px;
+  }
+  
+  
+  
+  thead{
+    /* width: 1124px; */
+    height: 48px;
+    flex-grow: 0;
+    padding: 16px 693px 16px 22px;
+    background-color: var(--bw-white);
+    position: static;
+  }
+  
+  tbody{
+    width: 1124px;
+    height: 76px;
+    flex-grow: 0;
+    padding: 20px 32px 14px 20px;
+    background-color: var(--bw-white);
+  }
+  
+  .th-1{
+    margin: 16px 0px 16px 22px;
+  }
+  
+  .th-2{
+    margin: 16px 80px 16px -7.813rem;
+  }
+  
+  
+  
+  .tags{
+  margin-top: 10px;
+  margin-left: 2px;
+  }
+  
+  .tagName{
+    margin-left: -4px;
+  }
+  
+  
+  
+  .Tag-Name {
+    width: 100px;
+    height: 16px;
+    margin: 0 238px 4px 8px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+  
+  .Created-by-Anuran{
+    width: 104px;
+    height: 16px;
+    margin: 4px 213px 6px 8px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: var(--bw-grey-04);
+  }
+  
+  
+  .keywords{
+    width: 567px;
+    overflow: hidden;
+    height: 41px;
+    margin: 16px 64px 0 -8rem;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+  
+  .group{
+    width: 88px;
+    height: 24px;
+    margin: 6px 0 12px 64px;
+  }
+  
+  .icons{
+    margin-top: 16px;
+  }
+  
+  
+  .icons-1{
+    /* margin-right: 2rem; */
+    width: 24px;
+    height: 24px;
+    flex-grow: 0;
+    margin: 0 40px 0 0;
+    object-fit: contain;
+    flex-grow: 0;
+   color: var(--bw-grey-04);
+   border: none;
+   margin-top: 15px;
+   background-color: var(--bw-white);
+  
+  }
+  
+  @media screen and (min-width: 420px) and (max-width: 768px) {
+  
+  
+  .layout{
+    width: 350px;
+    margin-top: 110px;
+    margin-left: -1280px;
+  }
+  
+  .savedSearchlistTopBar{
+    width: 550px;
+  }
+  
+  .inputSearch{
+  
+    margin-left: -30px;
+    width: 300px;
+  
+  }
+  .Button-Tertiary{
+    margin-left: -340px;
+  }
+  
+  .table{
+    width: 100px;
+  }
+  
+  
+  }
+  

@@ -1,0 +1,68 @@
+.figure{
+    flex-grow: 0;
+  font-family: Inter;
+  font-size: 27px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: -0.54px;
+  text-align: left;
+  color: var(--bw-black);
+
+}
+
+.positive{
+    background-image: url(../../../../assets/images/positive.svg);
+    width: 24px;
+    height: 24px;
+    color: rgba(30, 255, 50, 0);
+    position: relative;
+    top: -5px;
+}
+.negative{
+    background-image: url(../../../../assets/images/negative.svg);
+    width: 24px;
+    height: 24px;
+    color: rgba(30, 255, 50, 0);
+    position: relative;
+    top: -5px;
+}
+
+.positiveText{
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.07;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: var(--direction-pos);
+  /* margin-top: -15px; */
+
+}
+
+.negativeText{
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.07;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: var(--direction-neg);
+}
+
+.figureType{
+    font-family: Inter;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: var(--brand-tm);
+}

@@ -1,0 +1,361 @@
+.body{
+  background-color: var(--bw-grey-01) !important;
+  /* height: 100%;
+  overflow-y: hidden; */
+}
+.newsLetterBody{
+  background-color: var(--bw-white) !important;
+  height: 184px;
+}
+.createNewsLetter{
+    width: auto;
+    height: 92px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px 24px;
+    border: solid 1px var(--bw-grey-01);
+    background-color: var(--bw-white);
+  }
+
+  .PageTitle{
+    height: 60px;
+    align-self: stretch;
+    flex-grow: 0;
+    padding: 0 0 4px;
+
+  }
+
+  .title{
+    height: 44px;
+    flex-grow: 1;
+    font-family: Inter;
+    font-size: 37px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: -0.74px;
+    text-align: left;
+    color: var(--bw-black);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .news{
+    font-size: 37px;
+  }
+
+  .HeaderIcons{
+    width: 136px;
+    height: auto;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-top: -5px;
+  }
+
+  .topIcons_Text{
+    width: 40px;
+    height: auto;
+
+  }
+
+  .topIcons{
+  width: 40px;
+  height: 40px;
+  color: dodgerblue;
+  border: 3px solid var(--bw-grey-01);
+
+  }
+
+  .IconText{
+    font-size: 8px;
+    width: auto;
+    height: auto;
+    font-weight: 700;
+    color: dodgerblue;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .newsLetterPannels{
+    width: auto;
+    height: 92px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 0 20px;
+    background-color: var(--bw-white);
+  margin-top: -1px;
+  }
+
+  .SelectSearch{
+    width: auto;
+    height: 72px;
+    margin: 0 8px 0 20px;
+    padding: 12px 12px 16px;
+    border-radius: 8px;
+    border: solid 1px var(--bw-grey-01);
+    background-color: var(--bw-white);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 5;
+  }
+  /* All Text's Like Select Search and Recipients etc.. css is Text */
+  .Text{
+    width: auto;
+    height: 16px;
+    margin: 0 401px 12px 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+
+  .icon-1{
+    width: 16px;
+    height: 16px;
+    margin: -5px 0 12px 0px;
+    object-fit: contain;
+    color: var(--bw-grey-04);
+  }
+
+  .Select{
+    width: auto;
+  height: 16px;
+  margin: 12px 400px 0 0;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: -0.24px;
+  text-align: left;
+  color: var(--bw-grey-03);
+  }
+
+  .edit{
+    width: auto;
+    height: 16px;
+    margin: 12px 0px 4px 0px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: right;
+    color: var(--brand-alpha-blue)
+  }
+
+  .Recipients{
+    width: auto;
+    height: 72px;
+    margin: 0 8px 0 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: solid 1px var(--bw-grey-01);
+    background-color: var(--bw-white);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 5;
+
+  }
+
+
+  .icon-2{
+     width: 16px;
+     height: 16px;
+    margin: -8px 0 8px -270px;
+    object-fit: contain;
+    color: var(--bw-grey-04);
+  }
+
+  .SelectionChips {
+    width: max-content;
+    height: auto;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    background-color: #dae1f9;
+  }
+
+  .keys{
+    width: auto;
+    height: auto;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: var(--brand-alpha-blue)
+  }
+
+  /* .inputRecipents{
+    width: 250px;
+    height: 100px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px gray;
+    background-color: white;
+  position: absolute;
+  left: 100px;
+  margin-top: 60px;
+  } */
+
+  /* .control-styles{
+    width: auto;
+  height: 24px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  background-color: #dae1f9;
+  } */
+
+
+  .day{
+    width: 184px;
+    height: auto;
+    border: none;
+    color: black;
+    background-color: #dae1f9;
+    border-color: white;
+    padding: 4px 5px;
+    border-radius: 12px;
+    border: none;
+    margin:-9px 0px 0px -5px;
+    position: relative;
+  }
+
+  select {
+    /* appearance: none; */
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    width: auto;
+  }
+
+  select:focus {
+    outline: none;
+    box-shadow: 0 0 2px #719ECE;
+    border-color: #719ECE;
+  }
+
+  .inputTime{
+    width: auto;
+  height: auto;
+  padding: 30px;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--bw-white) !important;
+  border: 1px solid black;
+  z-index: 1;
+  position: absolute;
+  border-radius: 3px;
+  }
+
+  ng-multiselect-dropdown .multiselect-dropdown{
+    display: inline-block !important;
+    width: 80% !important;
+    padding: 6px 8px !important;
+    margin-top:-8px !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 1.1 !important;
+    border: none !important;
+    text-align: left !important;
+    vertical-align: middle !important;
+    cursor: pointer !important;
+    background-image: #dae1f9 !important;
+    /* background-color: #dae1f9 !important; */
+
+  }
+  ng-multiselect-dropdown .dropdown-btn{
+    border: none !important;
+    font-size: 12px;
+    color: var(--brand-alpha-blue);
+    margin-top: 2px !important;
+    outline: hidden !important;
+    height: 24px;
+  }
+
+  /* ng-multiselect-dropdown .multiselect-dropdown .dropdown-btn .selected-item{
+    border: none !important;
+    background-color: none !important;
+  } */
+
+ ng-multiselect-dropdown .selected-item{
+    border-radius: 2rem !important;
+    background-color: #dae1f9 !important;
+    color: var(--brand-alpha-blue) !important;
+    font-weight: 700 !important;
+  }
+
+/* ::ng-deep .selected-item{
+  background-image: #dae1f9 !important;
+  color: chartreuse
+} */
+
+
+  /* #multiselect-diacritics.control-section{
+    width: 80%;
+    margin: 0 auto;
+    min-width: 185px;
+} */
+
+.titleArticle{
+  height: auto ;
+  margin: 12px 12px 12px 12px !important;
+  background-color: var(--bw-white) !important;
+}
+
+
+  .staticScreen{
+  height:  40.2vh;
+  margin-top: 270px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: -0.44px;
+  text-align: center;
+  color: var(--bw-grey-03);
+}

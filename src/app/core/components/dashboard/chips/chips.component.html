@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="input-conatiner">
+      <ul class="chip-bar" (click)="onChipBarClick()">
+        <li class="chip" *ngFor="let item of items; let i = index">
+          <span class="chip-label">
+            {{ item }}
+          </span>
+          <span *ngIf="removable" class="material-symbols-outlined remove" (click)="removeItem(i)">
+            cancel
+          </span>
+        </li>
+        <li class="input-field">
+          <input #inputField type="text" name="" id="" class="input" autocomplete="off" [placeholder]="placeholder"
+            (keydown)="onKeyDown($event, inputField.value)" />
+        </li>
+      </ul>
+    </div>
+  </div>
+  

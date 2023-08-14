@@ -1,0 +1,76 @@
+<div class="containers d-flex flex-row">
+  <!-- <img src="../../../../assets/Login/Login_Background.png"
+     srcset="img/login-background@2x.png 2x,
+             img/login-background@3x.png 3x"
+     class="Login_Background"> -->
+  <div class="left_portion d-flex flex-column">
+    <img src="../../../assets/Login/Logo/Logos.png" alt="" class="logo">
+    <span class="title" ><b>Build Analytics </b> with</span>
+    <span class="Intelligence title">
+      Intelligence
+    </span>
+
+    <!-- Slider -->
+
+    <div class="sliderImages">
+      <img src="..//../../assets/Login/slider/Frame 1892@2x.png" alt="" class="sliderImage_1">
+
+    </div>
+
+  </div>
+
+  <div class="right_portion d-flex flex-column">
+    <div class="LoginTitle">
+      <span class="Login Headline4">
+        Login
+      </span>
+      <span class="WelcomeTitle">
+        Welcome back, login to AlphametricX
+      </span>
+    </div>
+    <form [formGroup]="loginForm"  class="InputFields ">
+      <div class="InputEmail d-flex flex-row">
+        <input type="email" formControlName="email" class="email form-control form-control-sm"  placeholder="Registered Email">
+        <span class="material-symbols-outlined">
+          person_filled
+          </span>
+      </div>
+      <div class="InputEmail d-flex flex-row ">
+        <div class="input-group input-group-sm">
+        <input type="password" class="email form-control form-control-sm" formControlName="password">
+          <!-- <button type="button" class="btn btn-outline-secondary" > -->
+        <!-- <span class="material-symbols-outlined">
+          visibility_off
+          </span> -->
+        <!-- </button> -->
+        </div>
+      </div>
+      <button class="LoginButton btn btn-primary" type="button" (click)="login()" >
+        <!-- <span class="spinner-border spinner-border-sm" role="status" ></span> -->
+        <span class="Log">Login</span>
+      </button>
+    </form>
+    <a href="#" class="Forgotpassword">Forgot Password?</a>
+  </div>
+</div>
+
+<footer class="d-flex flex-row ">
+  <div class="d-flex flex-row threeFooters">
+    <span class="Contact-Us footerTitle">
+      Contact Us
+    </span>
+    <span class="Terms-Conditions footerTitle">
+      Terms & Conditions
+    </span>
+    <span class="Privacy-Policy footerTitle">
+      Privacy Policy
+    </span>
+  </div>
+
+  <span class="-alphametricx copyRight">
+    &copy; 2022 alphametricx
+  </span>
+
+</footer>
+
+

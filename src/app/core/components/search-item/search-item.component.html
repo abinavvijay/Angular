@@ -1,0 +1,62 @@
+<div class="row  search-figure search-figure-height" style="vertical-align: middle; margin-left: 0px; margin-bottom: 2px; margin-right: 0px;">
+    <div class="col col-6">
+        <ul class="item-action-holder d-flex flex-row">
+            <li class="item-action"><input type="checkbox" class="form-check-input p-2"[checked]="item.selected" (change)="checkboxChanged($event)" ></li>
+            <li class="item-action"><span class="material-symbols-outlined " [ngClass]="{'bookMark': bookMark}" (click)="bookMarkColor()" >
+              bookmark
+            </span>
+              </li>
+            <li class="item-action"><img src="./assets/images/comment.png" (click)="showTextareaBox=!showTextareaBox" />
+                         <!--Comment  -->
+              <div class="d-flex flex-column comment" *ngIf="showTextareaBox">
+                <textarea name="" class="commentInput m-1" placeholder="Add a comment" maxlength="90"></textarea>
+                <div class="d-flex flew-row justify-content-end align-items-end m-2">
+                <button type="submit" class="btn btn-primary">Done</button>
+              </div>
+              </div>
+            </li>
+        </ul>
+        <div class="search-item-title"><a class = "title" href="{{item.postUrl}}" target="_blank">{{item.title}}...</a></div>
+        <div class="search-item-text_height">{{item.description|textTrim:250}}</div>
+        <!-- <mat-icon class="ChannelLogos">group_work</mat-icon> -->
+        <span class="other-details"> <a href="{{item.site}}"
+            target="_blank">{{item.site}}</a> | Published on {{item.publishedOn|dateValue}} | {{item.author||'NA'}} | United States of America |
+            {{item.match|arrToCSV:'count':2}} matching Keywords | {{item.media == 'pressreader' ? 'Print Media' : 'Online News'}}</span>
+
+  </div>
+  <div class="col col-2">
+      <div class="placeholder">
+          <img class="articleImage" alt="Channel Logo" #img (error)="setDefaultImage($event)"
+              src="{{(item.image&& item.image !='')?item.image: './assets/images/noimage.png'}}" />
+      </div>
+
+
+  </div>
+  <div class="col col-4">
+
+      <div class="pos sentiment" *ngIf="item.sentiment=='pos'">
+          <span>
+              😊
+          </span> <span>Positive</span>
+      </div>
+      <div class="neg sentiment" *ngIf="item.sentiment=='neg'">
+          <span>
+              😞
+          </span> <span>Negative</span>
+      </div>
+      <div class="neu sentiment" *ngIf="item.sentiment=='neu'">
+          <span>
+              😐
+          </span> <span>Neutral</span>
+      </div>
+
+        <div class="row">
+            <div class="col col-3 me-4 reach">Reach : <span>{{item.reach|thousandSuff:1}}</span> </div>
+            <div class="col col-3 me-4 reach">AVE : ~$ <span>{{item.ave|thousandSuff:1}}</span></div>
+            <div class="col col-3 me-4 reach">Syndication : <span>{{item.syndication|thousandSuff:1}}</span></div>
+        </div>
+        <div class="search-match">Matches : {{item.match|arrToCSV:'csv':2}} ...</div>
+    </div>
+
+</div>
+

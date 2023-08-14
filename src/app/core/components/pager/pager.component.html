@@ -1,0 +1,41 @@
+<div style="height:auto; display: flex; vertical-align: middle; padding-top: 5px;" *ngIf="pages.length > 0">
+  <div class="selectAll d-flex flex-row">
+      <input type="checkbox" class="form-check-input p-2 mx-2" [(ngModel)]="selectedAll" (click)="onSelectedCheckbox()" >
+      <select name="Select" id="" class="form-select " style="border: none; height: auto;">
+        <option selected disabled hidden>Select</option>
+        <option value="All 1.9 Mn results">All 1.9 Mn results</option>
+        <option value="All tagged">All tagged</option>
+        <option value="None">None</option>
+      </select>
+    </div>
+
+    <div style="height:44px; display: flex; vertical-align: middle; padding-top: 5px;" *ngIf="pages.length > 0">
+      <span class="item ms-2  " [ngClass]="{'selected':selected=='Previous'}"  (click)="onPrevious()">Previous</span>
+
+    <span class="item ms-1 {{selected=='{{item}}'? 'selected': ''}}" [ngClass]="{'selected':selected==item}"
+        (click)="onItemClick(item, i)" *ngFor="let item of pages; let i = index"> {{item}}
+    </span>
+    <span class="item  ms-1 {{selected=='Next'? 'selected': ''}}" [ngClass]="{'selected':selected=='Previous'}"
+        (click)="onNext()" >Next</span>
+
+        <span class="header-spacer"></span>
+        <span class="me-4 mt-2">
+
+            <mat-select placeholder="Sort By" (selectionChange)="OnChangeSorting($event)">
+                <mat-option  value="posts_published">
+                  Date Published
+                </mat-option>
+                <mat-option  value="posts_thread_reach">
+                    Reach
+                  </mat-option>
+                  <mat-option  value="ave">
+                    Ave
+                  </mat-option>
+                  <mat-option  value="sentiment">
+                    Sentiment
+                  </mat-option>
+
+              </mat-select>
+
+        </span>
+</div>

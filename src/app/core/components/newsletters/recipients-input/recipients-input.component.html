@@ -1,0 +1,40 @@
+
+
+        <form class="InputForm" [formGroup]="form" #formDIr="ngForm" >
+          <div class="form-group" >
+            <div class="input_Recipients m-1">
+              <div class="d-flex flex-column m-2">
+                <span class="header_text pb-4">Add Recipients</span>
+                <span>Newsletter will be sent to the recipients email Id at the scheduled date and time.</span>
+              </div>
+              <hr style="width: auto;">
+              <div class="d-flex flex-column inputField ">
+                <span class="SendTo">Send To</span>
+                <!-- <input type="email" [(ngModel)]="newEmail"  class="Recipients form-control" placeholder="email,comma separated" id="inputRecipient" formControlName="inputRecipient" required /> -->
+                <!-- <input type="email" [value]="emailList"  class="Recipients form-control" placeholder="email,comma separated" id="inputRecipient" formControlName="inputRecipient" required #inputEmail/> -->
+                <mat-form-field appearance="fill">
+                <mat-chip-list #chipList >
+                  <mat-chip *ngFor="let email of emailList" [removable]="true" (removed)="removeEmail(email)" [selectable]="true">
+                    {{email}}
+                    <mat-icon matChipRemove>cancel</mat-icon>
+                  </mat-chip>
+                  <input matInput #emailInput  [matChipInputFor]="chipList"
+                  [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+             [matChipInputAddOnBlur]="true" (matChipInputTokenEnd)="addEmail($event)"  placeholder="email,comma separated" id="inputRecipient" formControlName="inputRecipient" [value]="prevEmail" required >
+                </mat-chip-list>
+
+              </mat-form-field>
+              <div class="alert-danger" *ngIf="form.get('inputRecipient')?.invalid && (form.get('inputRecipient')?.dirty) || form.get('inputRecipient')?.touched">
+                <div *ngIf="form.get('inputRecipient')?.hasError('required')">
+                  Email is required.
+                </div>
+              </div>
+            </div>
+              <hr style="width: 670px;margin-left: -23px;overflow: hidden;">
+              <div class="d-flex flex-row buttons m-3">
+                <button class="cancel " (click)="CancelForm()">Cancel</button>
+                <button class="done btn btn-primary" type="submit" [disabled]="form.invalid" (click)="submit()">Done</button>
+              </div>
+            </div>
+          </div>
+        </form>

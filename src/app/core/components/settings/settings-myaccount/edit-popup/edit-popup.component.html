@@ -1,0 +1,20 @@
+<h1 mat-dialog-title class="edit">Edit Profile</h1>
+<div mat-dialog-content>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBcg5OV7m4Ojt-6P7o0JwzgBcZosZwisJw0A&usqp=CAU" alt="" class="profile-img">
+
+    <div class="form-group col-6">
+        <label for="" class="Password_Label">First Name</label>
+        <input type="password" class="form-control Password" placeholder="Jessica">
+      </div>
+      <div class="form-group col-6">
+        <label for="" class="Password_Label">Last Name</label>
+        <input type="password" class="form-control Password" placeholder="Robinson">
+      </div>
+      
+</div>
+<div mat-dialog-actions class="changes">
+    <div class="Line-178"></div>
+
+  <button mat-button class="cancel" (click)="onNoClick()">Cancel</button>
+  <button mat-button class="update" cdkFocusInitial>Update</button>
+</div>

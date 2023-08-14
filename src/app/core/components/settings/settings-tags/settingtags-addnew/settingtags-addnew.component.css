@@ -1,0 +1,94 @@
+.change{
+    width: 189px;
+    height: 28px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    /* margin-bottom: 15px; */
+    line-height: 1.27;
+    letter-spacing: -0.44px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+
+.cancel {
+  background-color: #e4e9fb;
+  color: var(--brand-alpha-blue);
+  border: none;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  margin-top: 30px;
+  margin-left: 375px;
+  width: 114px;
+  height: 44px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.update {
+  background-color: var(--brand-alpha-blue);
+  color: var(--bw-white);
+  border: none;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  margin-left: 500px;
+  margin-top: -45px;
+  border: none;
+  border-color: white;
+  width: 114px;
+  height: 44px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.changes {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.Password_Label {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  margin-bottom: 10px;
+  margin-top: 12px;
+}
+
+.Password1{
+    width: 632px;
+
+    height: 160px;
+    font-family: Inter;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  /* margin-bottom: 10px; */
+  margin-top: 12px;
+}
+
+.Password {
+  width: 632px;
+  height: 45px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  margin-bottom: 15px;
+}

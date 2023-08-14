@@ -1,0 +1,16 @@
+.download {
+    width: 80px;
+    height: 16px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-grey-04);
+    cursor: pointer;
+    margin-top: 13px;
+  }

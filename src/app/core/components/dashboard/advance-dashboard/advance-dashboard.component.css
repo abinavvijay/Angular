@@ -1,0 +1,563 @@
+.advancedDashboard{
+    margin-top: 0px;
+  }
+  .advanced-dashboard{
+    margin-top: 6.4rem;
+    margin-left:-1164px;
+    width: auto;
+    height: 510px;
+    margin-right: 12px;
+  }
+
+
+  .brand{
+    width: auto;
+    height: 500px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0 0 20px;
+    background-color: var(--bw-white);
+    margin-left: -4px;
+    margin-top: 1px;
+  }
+
+  .topDashboard{
+    width: 1110px;
+    height: 56px;
+    margin: 0 0 8px;
+    padding: 20px 20px 8px;
+    display: flex;
+    flex-direction: row;
+  }
+  .Dashboard-Name{
+    width: auto;
+    height: 10px;
+    margin: 0 10px 0 0;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -0.4px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+
+  .download{
+    width: 166px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 2px 0 2px 724px;
+    padding: 0;
+  }
+
+  .select{
+    width: auto;
+    height: 16px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-grey-04);
+    border: none;
+    outline: none;
+  }
+
+  .share{
+    width: 36px;
+    height: 16px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-grey-04);
+
+  }
+
+  .icon{
+    width: 30px;
+    height: 13px;
+    margin: 0 0 0 12px;
+  }
+
+  .Search_time{
+    width: 1110px;
+    height: 72px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0 20px;
+  }
+
+  .search{
+    width: 684px;
+    height: 72px;
+    margin: 0 8px 0 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: solid 1px var(--bw-grey-01);
+    background-color: var(--bw-white);
+  }
+
+  .Select_Search{
+    width: 85px;
+    height: 13px;
+    margin: 0 13px 8px 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+
+  .icon-1{
+    width: 16px;
+    height: 16px;
+    margin: -4px 0 8px 520px;
+    object-fit: contain;
+    color: var(--bw-grey-04);
+  }
+
+
+  .subSearch{
+    width: 105px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+    margin: 8px 490px 0 0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: solid 1px var(--bw-grey-02);
+    background-color: var(--bw-grey-01);
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: center;
+    font-size: 10px;
+    color: var(--bw-black);
+  }
+
+
+
+  .edit{
+    width: auto;
+    height: 16px;
+    margin: 14px 0px 0px -53px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: right;
+    color: var(--brand-alpha-blue);
+  }
+
+  .time{
+    width: 378px;
+    height: 72px;
+    margin: 0 0 0 8px;
+    padding: 12px;
+    border-radius: 8px;
+    border: solid 1px var(--bw-grey-01);
+    background-color: var(--bw-white);
+
+  }
+
+  .Timeline{
+    width: 53px;
+    height: 16px;
+    margin: 0 285px 8px 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+
+  .icon-2{
+    width: 10px;
+    height: 10px;
+    margin: -4px 0 8px -4px;
+    object-fit: contain;
+    color: var(--bw-grey-04);
+
+  }
+
+  .time_days{
+    width: 306px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 8px 32px 0 0;
+    padding: 0;
+
+  }
+
+
+  .one_month{
+    width: 30px;
+    height: 20px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    background-color: #dae1f9;
+    margin-top: -4px ;
+    margin-right: 12px;
+    text-align: center;
+
+  }
+
+  .label{
+    width: 44px;
+    height: 16px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: var(--brand-alpha-blue);
+
+  }
+
+  .campaign{
+    width: 1085px;
+    height: 188px;
+    padding: 12px;
+    margin-left: 19px;
+    /* margin: 0 0 10px; */
+    border-radius: 8px;
+    border: solid 1px var(--bw-grey-01);
+    background-color: var(--bw-white);
+  }
+
+  .Campaign-Name {
+    width: 102px;
+    height: 16px;
+    margin: 0 928px 8px 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+
+  .Campaign-Box{
+      width: 1046px;
+      height: 140px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 8px;
+      margin: 8px 0 0;
+      padding: 0;
+    }
+
+    .Enter-Campaign{
+      width: 228px;
+    height: 140px;
+    margin-top: -10px;
+    padding: 12px 0 56px;
+    border-radius: 8px;
+    border: solid 1px var(--bw-grey-01);
+    background-color: var(--bw-white);
+    }
+
+    .Enter-name{
+      width: auto;
+    height: 16px;
+    margin: 0 95px 11px 11px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: var(--bw-grey-03);
+    }
+
+    hr{
+      margin-top: 3px;
+    }
+
+    .Enter-specific-keyword{
+      width: auto;
+    height: 32px;
+    margin: 0 69px 0 11px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: var(--bw-grey-03);
+    border: none;
+    outline: none;
+    }
+
+    .Add-New{
+      width: auto;
+    height: 140px;
+    margin: -10px 0 0 8px;
+    /* margin-bottom: 3px; */
+    padding: 54px 38px;
+    border-radius: 8px;
+    border: solid 1px var(--bw-grey-01);
+    background-color: var(--bw-white);
+
+    }
+
+    .Add-New-Text{
+      width: auto;
+    height: 32px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: center;
+    color: var(--bw-grey-03);
+    margin-top: -4px
+    }
+
+    .Filters {
+      width: 1070px;
+      height: 72px;
+      flex-grow: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      /* gap: 1px; */
+      padding: 0;
+    }
+
+
+    .All-DownBoxs{
+      width: 262px;
+    height: 72px;
+    margin: 0 7.5px 0 16px;
+    padding: 0 0.5px 0 0;
+    border-radius: 8px;
+    border: solid 1px var(--bw-grey-01);
+    background-color: var(--bw-white);
+    }
+
+    .Media-Type{
+      width: 72px;
+    height: 16px;
+    margin: 10px 0 8px 15px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-black);
+    }
+
+    .arrow-icon{
+      width: 16px;
+    height: 16px;
+    margin: 0 0 8px 130px;
+    object-fit: contain;
+    font-size: xx-small;
+
+    }
+  .All-Downbuttons{
+    width: 182px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 8px 75px 0 12px;
+    padding: 0;
+  }
+  .SelectionChips{
+    width: auto;
+    height: 24px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    background-color: #dae1f9;
+  }
+  .SmallText{
+    width: auto;
+    height: 16px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: var(--brand-alpha-blue);
+
+  }
+
+  .dots{
+    width: 19px;
+    height: 16px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.84px;
+    text-align: center;
+    color: var(--brand-alpha-blue);
+  }
+
+  .positive{
+    width: auto;
+    height: 24px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    background-color: #dae1f9;
+  }
+
+  .SmallText-positive{
+    width: auto;
+    height: 16px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: var(--brand-alpha-blue);
+  }
+  .button {
+    width: 1118px;
+    height: 60px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 0 0 710px;
+    margin-top: -30px;
+    margin-left: 15px;
+    border: solid 1px var(--bw-grey-01);
+    background-color: var(--bw-white);
+  }
+
+  .generate-button{
+    width: 360px;
+    height: 44px;
+    flex-grow: 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 13px 32px;
+    border-radius: 4px;
+    background-color: var(--brand-alpha-blue);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    text-align: center;
+    color: var(--bw-white);
+  }
+
+  /* Media Query */
+
+
+  @media screen and (min-width: 420px) and (max-width: 768px) {
+
+    .advanced-dashboard{
+      margin-left:-468px;
+      overflow-y: hidden;
+    }
+  }

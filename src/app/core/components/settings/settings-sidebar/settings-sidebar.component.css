@@ -1,0 +1,85 @@
+.Settings-landing {
+    width: 1440px;
+    height: 1024px;
+    flex-grow: 0;
+    padding: 0 0 156px;
+    background-color: var(--bw-grey-01);
+  }
+
+
+
+  .Frame-1758 {
+    width: 280px;
+    height: 680px;
+    flex-grow: 0;
+    margin-top: 12px;
+    padding: 20px 20px 304px 12px;
+    background-color: var(--bw-white);
+  }
+
+
+
+  .sideNavItem {
+    width: 240px;
+    height: 44px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 9px 0;
+    border-bottom: solid 1px var(--bw-grey-01);
+    background-color: var(--bw-white);
+  }
+
+  .Frame-1768 {
+    height: 26px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 4px 0;
+  }
+
+  label {
+    width: 158px;
+    height: 18px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    border: none;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: var(--bw-grey-04);
+  }
+
+  
+  @media screen and (min-width: 420px) and (max-width: 768px) {
+  
+    .Frame-1758 {
+        width: 150px;
+        height: 680px;
+        flex-grow: 0;
+        margin-top: 12px;
+        padding: 20px 20px 304px 12px;
+        background-color: var(--bw-white);
+      }
+
+      .sideNavItem {
+        width: 130px;
+        height: 44px;
+        flex-grow: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 9px 0;
+        border-bottom: solid 1px var(--bw-grey-01);
+        background-color: var(--bw-white);
+      }
+}

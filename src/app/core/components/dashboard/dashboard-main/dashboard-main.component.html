@@ -1,0 +1,49 @@
+<div class="PageTitleSection">
+    <div class="titleDashboard">
+      <span class="Title Headline3">
+        Dashboards
+      </span>
+        <!-- <a routerLink="" class="nav-link" (click)="signOut()" *ngIf="isAuthenticated">Sign Out</a> -->
+      <button class="Button-Primary button" [routerLink]="['/new-dashboard']">Create New</button>
+    </div>
+    <div class="dashboardTabs">
+    <mat-tab-group>
+      <mat-tab label="My Dashboards" >
+        <div class="DashboardlistTopBar">
+          <div class="selectAllGroup">
+            <input type="checkbox" name="" id="" class="checkbox" />
+            <span class="selectAll">Select All</span>
+          </div>
+          <div class="inputSearch">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="inputText"
+              placeholder="Search in dashboards"
+            />
+            <!-- <fa-icon [icon]="faSearch" class="iconSeacrh"></fa-icon> -->
+          </div>
+          <div class="iconsSide">
+            <select name="Sort By" id=""  class="sortBy sortLabel">
+              <option selected disabled>Sort By</option>
+              <option value="">1</option>
+              <option value="">1</option>
+              <option value="">1</option>
+            </select>
+            <div class="vr"></div>
+            <div class="pairIcons">
+            <!-- <fa-icon [icon]="faBars" class="AllIcon"></fa-icon> -->
+            <!-- <fa-icon [icon]="faTableCellsLarge" class="AllIcon-1"></fa-icon> -->
+          </div>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Share With Me"> </mat-tab>
+      <mat-tab label="Starred"> </mat-tab>
+    </mat-tab-group>
+  </div>
+  
+  </div>
+  
+  

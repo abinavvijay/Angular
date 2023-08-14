@@ -1,0 +1,8 @@
+
+<ng-container *ngFor="let item of menuItems">
+<button  *ngIf="item.route" mat-button [routerLink]="[item.route]"  (click)="changeMenu(item.title)" class="iv-menu-button {{item.title==currentSelectedMenu?'button-selected':''}}">{{item.title}}</button>
+
+<button  *ngIf="!item.route"  mat-button   (click)="changeMenu(item.title)" class=" iv-menu-button {{item.title==currentSelectedMenu?'button-selected':''}}">{{item.title}} </button>
+
+</ng-container>
+

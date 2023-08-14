@@ -1,0 +1,76 @@
+<div style="margin-top: 2px">
+  <div class="titles d-flex flew-row justify-content-between" >
+    <p class="widget-header">{{ title }}</p>
+    <button class="matmen" mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon class="vert">more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="downloadTop5()">
+        <span class="down">Download as CSV</span>
+      </button>
+    </mat-menu>
+  </div>
+
+  <div class="content" *ngFor="let item of items">
+    <div class="contentLeft">
+      <ul class="item-action-holder">
+        <li class="item-action"><img src="./assets/images/checkbox.png" /></li>
+        <li class="item-action"><img src="./assets/images/save.png" /></li>
+        <li class="item-action"><img src="./assets/images/comment.png" /></li>
+      </ul>
+      <div class="article-header">
+        <a class="title" href="{{ item.postUrl }}" target="_blank"
+          >{{ item.title | textTrim : 50 }}...</a
+        >
+      </div>
+      <div class="description">{{ item.description | textTrim : 100 }}...</div>
+      <div class="links">
+        <span class="other-details">
+          United States of America |
+          {{ item.match | arrToCSV : "count" : 2 }} matching Keywords | Online
+          News</span
+        >
+      </div>
+    </div>
+    <div class="imagePlaceholder">
+      <img
+        class="articleImage"
+        alt="Channel Logo"
+        #img
+        (error)="setDefaultImage($event)"
+        src="{{
+          item.image && item.image != ''
+            ? item.image
+            : './assets/images/noimage.png'
+        }}"
+      />
+    </div>
+    <div class="statitics">
+      <div class="" style="margin-top: 24px">
+        <div class="row-gap">
+          Matches : <span>{{ item.match | arrToCSV : "csv" : 2 }} ... </span>
+        </div>
+        <div class="">
+          <div class="row-gap">
+            Reach : <span>{{ item.reach | thousandSuff }}</span>
+          </div>
+          <div class="row-gap">
+            AVE : ~$ <span>{{ item.ave | thousandSuff }}</span>
+          </div>
+          <div class="row-gap">
+            Syndication : <span>{{ item.syndication | thousandSuff }}</span>
+          </div>
+        </div>
+        <div class="pos sentiment" *ngIf="item.sentiment == 'pos'">
+          <span> 😊 </span> <span>Positive</span>
+        </div>
+        <div class="neg sentiment" *ngIf="item.sentiment == 'neg'">
+          <span> 😞 </span> <span>Negative</span>
+        </div>
+        <div class="neu sentiment" *ngIf="item.sentiment == 'neu'">
+          <span> 😐 </span> <span>Neutral</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

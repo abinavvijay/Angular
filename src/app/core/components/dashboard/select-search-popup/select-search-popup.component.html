@@ -1,0 +1,74 @@
+<div class="container popup">
+    <div class="popupHeading">
+      <span class="selectHeading">
+        Select Search Query
+      </span>
+    </div>
+    <div class="allView d-flex flex-row justify-content-between">
+      <mat-tab-group>
+        <mat-tab label="All" class="mat-1" >
+          <div class="inputSearch" >
+            <input type="text" class="input" [(ngModel)]="searchText" placeholder="Type to filter the list">
+          </div>
+          <div class="completeTable">
+          <table  *ngFor="let savedSearches of savedSearch | savedSearchFilter: searchText "  (click)="onClickSavedSearch(savedSearches)">
+            <thead>
+                <tr >
+                  <th >
+                    <span class="Covid " >
+                      {{savedSearches.savedas}}
+                    </span>
+                  </th>
+                  <th></th>
+                  <th></th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr >
+                <td>
+                  <div class="description">
+                  <span class="">
+                    {{(savedSearches.description.length >60)?(savedSearches.description | slice:0:80) + "...": (savedSearches.description)}}
+                  </span>
+                </div>
+                </td>
+                <td>
+                  <div class="d-flex flex-column groupCreateUpdate">
+                    <span class="Created-by">
+                      Created by
+                    </span>
+                    <span class="Creater-Name">
+                     {{userName | uppercase}}
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex flex-column groupCreateUpdate">
+                    <span class="Created-by">
+                      Updated on
+                    </span>
+                    <span class="Creater-Name">
+                      {{savedSearches.querydate}}
+                    </span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </mat-tab>
+        <mat-tab label="Share With Me"> </mat-tab>
+        <mat-tab label="Most Viewed"> </mat-tab>
+      </mat-tab-group>
+
+
+      <div class="buttons">
+        <mat-button-toggle-group appearance="legacy" name="fontStyle" aria-label="Font Style">
+          <mat-button-toggle value="bold">TM</mat-button-toggle>
+          <mat-button-toggle value="italic">SM</mat-button-toggle>
+          <mat-button-toggle value="underline">TM&SM</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+    </div>
+
+  </div>

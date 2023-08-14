@@ -1,0 +1,27 @@
+<form   (submit)="submit(saveNewsLetter.value)">
+  <!-- <div class="search_description ">
+    <div > <span class="header_text ">Save NewsLetter</span> <span
+            ></span> <mat-icon [ngStyle]="{'color':'black'}" (click)="CancelForm()">close</mat-icon></div>
+    <div class="label_text "> Search Name</div>
+    <input type="text" autocomplete="off" placeholder="Provide a name for this search" id="name"
+        class="form-control" formControlName="name" required>
+
+    <div *ngIf="form.get('name')?.invalid && (form.get('name')?.dirty || form.get('name')?.touched)"
+        class="alert-danger">
+        <div *ngIf="form.get('name')?.hasError('required')">
+            Name is required.
+        </div>
+
+      </div>
+</div> -->
+<div class="d-flex flex-column">
+  <div class="d-flex flex-row justify-content-between">
+    <div class="header_text">Save NewsLetter</div>
+    <mat-icon [ngStyle]="{'color':'black'}" (click)="CancelForm()">close</mat-icon>
+  </div>
+  <label class="label_text">NewsLetter Name</label>
+  <input type="text" name="" id="" class="form-control" placeholder="Please Enter the NewsLetter Name" #saveNewsLetter>
+</div>
+<button (click)="submit(saveNewsLetter.value)" class="btn btn-primary">Submit</button>
+
+</form>

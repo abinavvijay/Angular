@@ -1,0 +1,223 @@
+<div class="Results-MainContainer">
+  <div class="PageTitleSection">
+    <div class="titleDashboard">
+      <div class="Title Headline3">Newsletter</div>
+      <button class="Button-Primary" routerLink="/newsletter/createnew">
+        Create New
+      </button>
+    </div>
+    <div class="dashboardTabs">
+      <mat-tab-group>
+        <mat-tab label="My Dashboards">
+          <div class="DashboardlistTopBar">
+            <div class="selectAllGroup">
+              <input type="checkbox" name="" id="" class="checkbox" />
+              <span class="selectAll">Select All</span>
+            </div>
+            <div class="d-flex flex-row justify-content-around">
+              <div class="inputSearch">
+                <input type="text" name="" id="" class="inputText form-control" placeholder="Search in dashboards" />
+                <!-- <fa-icon [icon]="faSearch" class="iconSeacrh"></fa-icon> -->
+                <span class="iconSeacrh material-symbols-outlined">
+                  search
+                </span>
+              </div>
+              <iv-pager class="pager"></iv-pager>
+              <div class="iconsSide">
+                <select name="Sort By" id="" class="sortBy sortLabel">
+                  <option selected disabled>Sort By</option>
+                  <option value="">1</option>
+                  <option value="">1</option>
+                  <option value="">1</option>
+                </select>
+                <div class="vr"></div>
+                <div class="pairIcons">
+                  <!-- <fa-icon [icon]="faBars" class="AllIcon"></fa-icon> -->
+                  <span class="AllIcon material-symbols-outlined"> menu </span>
+                  <!-- <fa-icon [icon]="faTableCellsLarge" class="AllIcon-1"></fa-icon> -->
+                  <span class="AllIcon material-symbols-outlined">
+                    grid_view
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="newsLetterTables">
+          <table class="tables" *ngFor="let results of resultval">
+            <tbody>
+              <tr>
+                <td class="table_col_1 ms-1">
+                  <input type="checkbox" class="checkbox2" />
+                </td>
+                <td class="p-1 table_col_2 pe-1">
+                  <div class="newsLetterName">
+                    {{ results.name }}
+                  </div>
+                  <div class="infomation">
+                    {{ results.description }}
+                    <!-- <span class="Covid-Vaccine">
+                      </span>
+                      <span class="infomation"> -->
+                    <!-- This will the space for description and additional
+                        information about the saved search or whichever it may
+                        represent as per the user's need -->
+                    <!-- </span> -->
+                  </div>
+                </td>
+                <td class="table_col_3">
+                  <!-- <div class="createGroup"> -->
+                    <div class="label"> Created on </div>
+                    <div class="value"> {{ results.created_on | date }} </div>
+                  <!-- </div> -->
+                </td>
+                <td class="table_col_4">
+                  <!-- <div class="d-flex flex-column createGroup"> -->
+                  <div class="label">Last Updated</div>
+                  <div class="value">{{results.created_on| date}}</div>
+                  <!-- </div> -->
+                </td>
+                <td class="table_col_5">
+                  <div class="d-flex flex-column createGroupShare">
+                  <div class="label">Shared with</div>
+                  <ul class="d-flex flex-row value">
+                    <!-- <li><img src="" alt="img" class="image" /></li> -->
+                    <li><img class="image" [alt]="results.receipients | slice:0:11" style="background-color: #a442a455" />
+                      <!-- <img src="" alt="{{results.recipents}}" class="image" style="background-color: #a442a455" /> -->
+                      <!-- {{results.recipents}} -->
+                    </li>
+                    <!-- <li>
+                      <img src="" alt="img" class="image" style="background-color: #e44" />
+                    </li>
+                    <li>
+                      <img src="" alt="img" class="image" style="background-color: #922392" />
+                    </li>
+                    <li>
+                      <img src="" alt="img" class="image" style="background-color: #333" />
+                    </li> -->
+
+                  </ul>
+                  </div>
+                </td>
+                <td class="table_col_6">
+                  <!-- <div class="d-flex flex-column createGroup"> -->
+                    <div class="label"> Reccurence </div>
+                    <div class="value"> {{ results.send_on }} </div>
+                  <!-- </div> -->
+                </td>
+                <td class="table_col_7">
+                  <!-- <div class="d-flex flex-row justify-content-between icons"> -->
+                    <!-- <fa-icon [icon]="faBookmark" class="icons-1"></fa-icon> -->
+                   <ul>
+                    <li> <div class="icons-1 material-symbols-outlined">
+                     bookmark
+                    </div>
+                    </li>
+                    <li><div class="icons-1 material-symbols-outlined">
+                      edit_square
+                    </div>
+                    </li>
+                    <!-- <fa-icon [icon]="faEdit" class="icons-1"></fa-icon> -->
+                    <li> <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu"
+                      class="icons-1">
+                      <mat-icon>more_vert</mat-icon>
+                    </button>
+                  </li>
+                </ul>
+                    <mat-menu #menu="matMenu" class="matEdit">
+                      <button mat-menu-item class="menu-item">
+                        <span>Edit</span>
+                      </button>
+                      <button mat-menu-item class="menu-item" (click)="delete(results.nl_id)">
+                        <span>Delete</span>
+                      </button>
+                      <button mat-menu-item class="menu-item">
+                        <span>Download Excel</span>
+                      </button>
+                      <button mat-menu-item class="menu-item">
+                        <span>Download Word</span>
+                      </button>
+                      <button mat-menu-item class="menu-item">
+                        <span>Download CSV</span>
+                      </button>
+                    </mat-menu>
+                  <!-- </div> -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </mat-tab>
+        <mat-tab label="Share With Me"> Content 1 </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+
+  <!-- <div class="NewsletterListItem">
+      <div class="Frame-1692">
+        <input type="checkbox" name="" id="" class="checkbox1" />
+        <div class="Frame-1693">
+          <div class="Group-1676">
+            <span class="Covid-Vaccine-Newsletter Subtitle2">
+              Covid Vaccine Newsletter
+            </span>
+            <span
+              class="This-will-the-space-for-description-and-additional-information-about-the-saved-search-or-whichever-i SmallText"
+            >
+              This will the space for description and additional information about
+              the saved search or whichever it may represent as per the user’s
+              need
+            </span>
+          </div>
+
+                  <div class="Group-1677">
+                    <span class="label SmallText"> Created on </span>
+                    <span class="-JUN-2022"> 02 JUN 2022 </span>
+                  </div>
+
+                  <div class="Group-1679">
+                    <span class="Last-Updated SmallText"> Last Updated </span>
+                    <span class="-JUN-2022"> 08 JUN 2022 </span>
+                  </div>
+
+                  <div class="Group-1678">
+                    <span class="Shared-with SmallText"> Shared with </span>
+                  </div>
+
+                  <div class="Group-1680">
+                    <span class="Reccurence SmallText"> Reccurence </span>
+                    <span class="Weekly"> Weekly </span>
+                  </div>
+                </div>
+
+        <div class="edit">
+
+          <div class="icons">
+              <fa-icon [icon]="faBookmark" class="icons-1"></fa-icon>
+            <fa-icon [icon]="faEdit" class="icons-1"></fa-icon>
+          </div>
+
+          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="icons-1">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <span>Edit</span>
+            </button>
+            <button mat-menu-item >
+              <span>Delete</span>
+            </button>
+            <button mat-menu-item>
+              <span>Download Excel</span>
+            </button>
+            <button mat-menu-item>
+              <span>Download Word</span>
+            </button>
+            <button mat-menu-item>
+              <span>Download CSV</span>
+            </button>
+          </mat-menu>
+
+        </div>
+      </div>
+    </div> -->
+</div>

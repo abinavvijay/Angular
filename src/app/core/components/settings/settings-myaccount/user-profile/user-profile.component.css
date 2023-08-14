@@ -1,0 +1,162 @@
+.containers{
+    overflow: hidden;
+  }
+  
+  .profile{
+    width: 252px;
+    height: 56px;
+    margin: 24px 848px 23px 24px;
+  
+  }
+  
+  .userImg{
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+
+    margin: 0 16px 0 0;
+    border: solid 0.9px rgba(255, 255, 255, 0.2);
+  }
+  
+  .Jessica-Robinson{
+    width: 108px;
+    height: 16px;
+    flex-grow: 0;
+    margin: 0 72px 4px 16px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+  
+  .userId{
+    width: 180px;
+    height: 16px;
+    flex-grow: 0;
+    margin: 4px 0 4px 16px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: var(--bw-grey-04);
+  }
+  
+  .userPassword{
+    width: 130px;
+    height: 36px;
+    gap: 6px;
+    margin: 24px 12px 406px 24px;
+    padding: 18px 8px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #e4e9fb;
+  
+  }
+  
+  .userPassword.text{
+    height: 24px;
+    flex-grow: 1;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: center;
+    color: var(--brand-alpha-blue);
+    padding-top: 20px;
+    border: none;
+  }
+  
+  .userPassword.userEditPro{
+    width: 117px;
+    height: 36px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    gap: 6px;
+    margin: 24px 839px 406px 12px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: none;
+    color: var(--brand-alpha-blue);
+    background-color: #e4e9fb;
+  }
+  
+  .Footer{
+    width: 183px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 10px 917px 0 24px;
+    padding: 8px 0;
+  }
+  
+  .NeedHelp{
+    width: 200px;
+    height: 16px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: right;
+    color: var(--bw-grey-04);
+    display: flex;
+    flex-direction: row;
+  }
+  
+  a{
+    width: auto;
+    color: var(--brand-alpha-blue);
+    margin-top: -10px;
+  }
+  
+  .Button-Tertiary55.need{
+    margin-top: -50px
+  }
+
+  @media screen and (min-width: 420px) and (max-width: 768px) {
+
+  .userPassword{
+    width: 450px;
+    /* height: 36px; */
+
+  }
+
+  .userPassword.text{
+    width: 150px;
+    height: 24px;
+    font-size: 10px;
+  }
+
+  .userPassword.userEditPro{
+    width: 117px;
+    /* height: 36px; */
+    font-size: 10px;
+
+}
+}

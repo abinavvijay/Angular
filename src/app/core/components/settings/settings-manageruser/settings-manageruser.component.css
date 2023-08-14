@@ -1,0 +1,345 @@
+.layout{
+    width: 1124px;
+    height: 662px;
+    flex-grow: 0;
+    margin: 195px 12px 12px -1216px;
+  }
+  
+  .savedSearchlistTopBar {
+    width: 1173px;
+    height: 68px;
+    padding: 16px 20px 16px 0px;
+    background-color: var(--bw-white);
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .selectAllGroup{
+    width: auto;
+    height: 32px;
+    margin: auto 30px auto -6px;
+    display: flex;
+    flex-direction: row;
+  
+  }
+  
+  .checkbox{
+    width: 17px;
+    height: 17px;
+    flex-grow: 0;
+    padding: 3.5px;
+    margin: 9px 7px  auto 22px;
+  }
+  
+  .selectAll{
+    width: 60px;
+    height: 16px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-grey-04);
+    text-align: center;
+    margin: 11px 10px  auto 7.5px;
+  
+  }
+  
+  
+  .inputSearch{
+    width: 480px;
+    height: 32px;
+    margin: 5px 350px 5px 40px;
+    padding: 4px 4.6px 4px 11.4px;
+    border-radius: 4px;
+    border: solid 1px var(--bw-grey-01);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .inputText{
+    width: auto;
+    border: none;
+    outline: none;
+    height: 24px;
+    flex-grow: 1;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -0.24px;
+    text-align: left;
+  }
+  
+  .iconSeacrh{
+    width: 24px;
+    height: 24px;
+    flex-grow: 0;
+    object-fit: contain;
+  }
+  
+  .Button-Tertiary {
+    width: 120px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
+    margin: 0 0 0 -64px;
+    padding: 10px 12px 10px 10px;
+    border-radius: 4px;
+    background-color: #486ce2;
+  }
+  .addIcon{
+    color: white;
+    margin-top: -3px;
+    width: 24px;
+    height: 24px;
+    flex-grow: 0;
+    object-fit: contain;
+    margin-left: -8px;
+  }
+  
+  .Add-New-Tag{
+    width: 70px;
+    height: 16px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: right;
+    color: var(--bw-white);
+    margin-left: -12px;
+  }
+  
+  table{
+    width: auto;
+    border-collapse:separate;
+    border-spacing: 0 2px;
+  }
+  
+  
+  
+  thead{
+    width: 1173px;
+    height: 48px;
+    flex-grow: 0;
+    padding: 16px 693px 16px 22px;
+    background-color: var(--bw-white);
+    position: static;
+  }
+  
+  
+  
+  .commonHead{
+    width: 100px;
+    height: 16px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-black);
+  
+  }
+  
+  .margin-1{
+    margin: 16px 0 16px 22px;
+  }
+  
+  .margin-2{
+    margin: 16px 0 16px -30px;
+  }
+  
+  .margin-3{
+    margin: 16px 0 16px 70px
+  }
+  
+  .margin-4{
+    margin: 16px 0 16px 0px
+  }
+  
+  tbody{
+    width: 1173px;
+    height: 76px;
+    flex-grow: 0;
+    padding: 20px 32px 14px 20px;
+    background-color: var(--bw-white);
+  }
+  
+  .tags{
+    margin: 20px 0 20px 4px;
+  }
+  
+  
+  .image-bg{
+    width: 36px;
+    height: 36px;
+    margin: 0 8px;
+    padding: 10px 0;
+    background-color: var(--brand-tm);
+    border-radius: 100%;
+  }
+  
+  .Name{
+    width: 126px;
+    height: 16px;
+    margin: 0 175px 4px 8px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+  
+  
+  
+  .emailName{
+    width: 200px;
+    height: 16px;
+    margin: 4px 101px 0 8px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: var(--bw-grey-04);
+  }
+  
+  .status{
+    width: 72px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 26px 90px 26px -40px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background-color: var(--chart-green);
+    flex-grow: 1;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: -0.26px;
+    text-align: center;
+    color: var(--bw-white);
+  }
+  
+  
+  .analyst {
+    width: 46px;
+    height: 20px;
+    margin: 26px 150px 26px 90px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-black);
+    /* margin-bottom: 26px; */
+    margin-top: 26px;
+    }
+  
+  
+  .date{
+    width: 76px;
+    height: 20px;
+    margin: 26px 167px 26px 0px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+  
+  .icons{
+    margin-top: 26px;
+  }
+  
+  
+  .icons-1{
+    /* margin-right: 2rem; */
+    width: 24px;
+    height: 24px;
+    flex-grow: 0;
+    margin: 0 35px 0 0;
+    object-fit: contain;
+    flex-grow: 0;
+   color: var(--bw-grey-04);
+  }
+  
+  .matmenu {
+    background-color: white;
+  
+  }
+  
+  .matmen {
+    background-color: var(--bw-white);
+    border: none;
+    margin-top: 15px;
+    /* margin-right: 100px; */
+  }
+  
+  .vert{
+    margin-top: 10px;
+    /* margin-right: 15px; */
+    margin-left: -35px;
+  }
+  
+  .Line-178 {
+    width: 1144px;
+    height: 1px;
+    margin-left: 5px;
+    /* margin-top: 20px; */
+    /* margin: 43px 0 24px; */
+    
+    background-color: var(--bw-grey-01);
+  }
+  
+  @media screen and (min-width: 420px) and (max-width: 768px) {
+
+    .inputSearch{
+        width: 280px;
+    height: 32px;
+    margin-left: -10px;
+    }
+    .Button-Tertiary {
+        width: 100px;
+        height: 36px;
+        margin-left: -340px;
+    }
+  }

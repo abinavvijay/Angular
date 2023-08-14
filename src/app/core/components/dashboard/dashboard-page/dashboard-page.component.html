@@ -1,0 +1,126 @@
+<div class=" NewDashboard">
+  <div class="TitleSection d-flex flex-row">
+    <div class="title d-flex flex-column">
+      <span class="TitleName">
+        New Dashboard
+      </span>
+      <span class="subtitle">
+        Choose a template or create a custom template.
+      </span>
+    </div>
+    <button class="btn cancelButton " routerLink="/dashboard">
+      <span>Cancel</span>
+    </button>
+  </div>
+
+  <!-- Standard Templates -->
+
+  <div class=" Topics-1">
+    <div class="StandardTemplates d-flex flex-column">
+      <span class="standardTitle ">
+        Standard Templates
+      </span>
+      <span class="description">
+        Select standard template to Lorem Ipsum is simply dummy text of the
+      printing and typesetting industry.
+      </span>
+
+      <div class="Curated d-flex flex-column">
+        <label class="CuratedTitle">
+          Curated For Traditional Media
+        </label>
+
+        <div class="d-flex  Dashboards">
+
+          <button class="DashboardButtons d-flex flex-row btn btn-primary" *ngFor="let title of titles"  [routerLink]="[title.route]">
+            <img src={{title.icon}} alt="" class="chartImage">
+            <label class="DashboardTitle">
+              {{title.title}}
+            </label>
+          </button>
+
+        </div>
+
+      </div>
+
+      </div>
+
+     <div class="AdvanceSection d-flex flex-row">
+
+      <div class="AdvanceTemplate d-flex flex-column">
+        <span class="AdvancedTitle">
+          Advanced Templates
+        </span>
+
+        <span class="description Advance">
+          Select standard template to Lorem Ipsum is simply dummy text of the printing
+        </span>
+
+        <div class="ForTraditional d-flex flex-column">
+          <label class="ForTraditionalTitle">
+            For Traditional Media
+          </label>
+          <button class="d-flex flex-row advanceButton"  routerLink="/new-dasboard/advanced-dashboard">
+            <img src="../../../../assets/Icons/24x24/ChartSample.png" alt="" class="chartImage">
+            <label class="DashboardTitle Advance">
+              Advanced
+            </label>
+          </button>
+
+        </div>
+
+     </div>
+
+      <div class="AdvanceTemplate d-flex flex-column">
+      <span class="AdvancedTitle">
+        Custom Templates
+      </span>
+
+      <span class="description Custom">
+        Select standard template to Lorem Ipsum is simply dummy text of the printing
+      </span>
+
+      <div class="ForTraditional d-flex flex-column">
+        <label class="ForTraditionalTitle">
+          For Traditional Media
+        </label>
+        <button class="d-flex flex-row advanceButton Custom" [routerLink]="['/new-dasboard/custom-dashboard']">
+          <img src="../../../../assets/Icons/24x24/ChartSample.png" alt="" class="chartImage">
+          <label class="DashboardTitle Custom">
+            Custom
+          </label>
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+
+  <div class=" Topics-2 d-flex flex-row">
+
+    <div class="TipsSection d-flex flex-column">
+      <span class="TipsTitle">
+        Tips and tricks to create a perfect dashboard
+      </span>
+      <span class="TipDescription">
+        Select standard template to Lorem Ipsum is simply dummy text of the
+      printing and typesetting industry.
+      </span>
+
+      <button class="viewTutorial">
+        <label for="">View Tutorial</label>
+      </button>
+    </div>
+
+    <div class="standdiv">
+      <img src="../../../../../assets/Logos/dashboard.png" alt="" class="stand">
+
+    </div>
+
+
+    </div>
+
+</div>

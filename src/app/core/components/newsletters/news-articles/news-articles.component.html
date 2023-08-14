@@ -1,0 +1,52 @@
+<div
+  class="container-fluid newsletterContent"
+  *ngIf="newsArticlesData && newsArticlesData.length > 0"
+>
+<!-- <div class="newsletterOpeningTitle d-flex flex-column">
+  <input type="text" name="" id="" placeholder="Newsletter Opening Title" class="openingTitle" (input)="onInputChange(Openingtitle.value)" #Openingtitle>
+  <p class="openingTitleContext">
+  This will be the space for description and additional information about the saved search or whichever it may represent as per the user's need"
+</p>
+  <hr>
+</div> -->
+  <div
+    class="card newsLetter-result"
+    *ngFor="let newsArticles of displayedItems"
+  >
+    <div class="card-body d-flex flew-row col col-12">
+      <div class="d-flex flex-row col col-9">
+        <div class="d-flex flex-column card-content">
+          <a href="{{ newsArticles.posts_Url }}" class="card-title">
+            {{ newsArticles.posts_title | textTrim : 100 }}...
+          </a>
+          <span class="card-text">
+            {{ newsArticles.posts_text | textTrim : 250 }}...
+          </span>
+          <div class="footers">
+            <footer class="Bottom d-flex flex-row">
+              <!-- <img src="" alt="asd" class="card-img-left"> -->
+              <span class="published-footer">
+                Published on {{ newsArticles.posts_published | dateValue }} |
+                {{ newsArticles.posts_url | textTrim : 20 }} |
+                {{ (newsArticles.posts_author)==="null"? "NA" : (newsArticles.posts_author) }} | New York, US |
+                {{ newsArticles.media_type }}
+              </span>
+            </footer>
+            <hr class="hr"/>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="card-img "> -->
+        <div class="placeholder col col-3">
+          <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzRN-MktYXqGZtPc5k_F8xXbopQZ5n1ZNfqg&usqp=CAU" alt="asd" class="img-fluid rounded-end"> -->
+          <img
+            [src]="newsArticles.posts_external_links"
+            alt="asd"
+            class="articleImage rounded-end d-block"
+          />
+        </div>
+      <!-- </div> -->
+    </div>
+  </div>
+  <!-- <iv-pager class="ml-3" [totalItems]="newsArticlesData.length" [itemsPerPage]="10" (pageChanged)="onPageChanged($event)"></iv-pager> -->
+</div>

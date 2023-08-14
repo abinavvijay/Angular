@@ -1,0 +1,122 @@
+<div class="mainSearch">
+  <div class=" ms-4 mt-4 mb-4 "  style="display:flex">
+    <span class="Title"> <span class="text-style-1"><mat-icon class="ms-2" style="padding-top: 6px ;">keyboard_backspace</mat-icon> Search</span>
+        / New Search</span>
+    <span class="header-spacer" style="margin-right: auto;"></span>
+    <span *ngIf="isResultAvailable" class="me-4"
+        (click)="showSaveSearchDialouge= !showSaveSearchDialouge">
+        <!-- <mat-icon>playlist_add</mat-icon> -->
+        <img src="../../../../assets/Icons/24x24/createList/CreateList.png" alt="" class="border border-grey p-1">
+    </span>
+    <button
+    class="matmenn  me-1 "
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    aria-label="Example icon-button with a menu"
+  >
+    <mat-icon class="vert">more_horiz</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item  (click)="openSelectSearch()">
+      <span class="down">Saved Searches</span>
+    </button>
+    <button mat-menu-item disabled="true">
+      <span class="down">Manage Source List</span>
+    </button>
+
+  </mat-menu>
+</div>
+<iv-search-bar [SearchCriteria]="query"></iv-search-bar>
+</div>
+
+
+<div class="m-4 mt-2 mb-2 " style="width:100%" *ngIf="filteredSource">
+    <iv-rich-dropwown selectionLabel="media" label="Media types" value="text" selectionTextPrefix="All"
+        [datasource]="filters.media" [selectedOptions]="selectedFilters['media']"
+        (selectedOptionsChange)="selectedOptions($event )"
+        style="display: inline-block; vertical-align: top; width: calc(25vw - 16px)"></iv-rich-dropwown>
+    <iv-rich-dropwown selectionLabel="location" [selectedOptions]="selectedFilters['location']" label="Location"
+        value="text" selectionTextPrefix="ALL" [datasource]="filters.location"
+        style="display: inline-block; vertical-align: top; width: calc(25vw - 16px);">
+    </iv-rich-dropwown>
+    <iv-rich-dropwown selectionLabel="language" label="Language" value="text" selectionTextPrefix="ALL"
+        [datasource]="filters.language" [selectedOptions]="selectedFilters['language']"
+        style="display: inline-block; vertical-align: top; width: calc(25vw - 16px);"></iv-rich-dropwown>
+    <!-- <iv-rich-dropwown selectionLabel="language" label="Language" value="text" selectionTextPrefix="ALL"
+        [datasource]="filters.language" [selectedOptions]="selectedFilters['language']" (selectedOptionsChange)="selectedOptions($event)"
+        style="display: inline-block; vertical-align: top; width: 25%;"></iv-rich-dropwown> -->
+
+    <iv-time-line style="display: inline-block; vertical-align: top; width: calc(25vw - 16px);"></iv-time-line>
+</div>
+
+<div style="background-color: var(--bw-grey-01) ; " class="p-2">
+    <ng-container *ngIf="filteredSource">
+        <div class=" p-4 pb-2  search-figure" id="resultfig" #resultfig  *ngIf="currentTab == 'All Results'">
+            <div  class="dark-grey-text mb-4 d-flex flex-row justify-content-between">
+              <div class="resInFig">Results in Figure</div>
+
+                <button
+                class="matmen p-2"
+                mat-icon-button
+                [matMenuTriggerFor]="menu"
+              >
+                <mat-icon class="vert">more_vert</mat-icon>
+              </button>
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item disabled="true">
+                  <span class="down">Download as PPT</span>
+                </button>
+                <button mat-menu-item  (click)="convertToPNG()">
+                  <span class="down">Download as PDF</span>
+                </button>
+                <button mat-menu-item (click)="downloadpng()">
+                  <span class="down">Download as PNG</span>
+                </button>
+              </mat-menu>
+            </div>
+
+            <iv-result-figure class="inline spacer200px" figure="{{filteredSource.data.query.totalRecords|thousandSuff:1}}"
+                [isPositive]="value1" figureType="Total Articles" percentage={{totalChanges}}>
+            </iv-result-figure>
+
+            <iv-result-figure class="inline spacer200px" figure="{{filteredSource.data.query.totalReach|thousandSuff:1}}"
+                [isPositive]="value2" figureType="Total Reach" percentage={{reachChanges}}>
+            </iv-result-figure>
+
+            <iv-result-figure class="inline spacer200px" figure="{{filteredSource.data.query.totalAve|thousandSuff:1}}"
+                [isPositive]="value3" figureType="Total Ad Value Equivalency (AVE)" percentage={{aveChanges}}>
+             </iv-result-figure>
+
+        </div>
+
+        <div class=" p-4 pt-2 mt-3 pb-0 mb-3 search-figure " id="dgraph" #dgraph >
+
+        <!-- </div> -->
+            <iv-searh-graph
+            [data]="filteredSource.data.graphData"
+            ></iv-searh-graph>
+        </div>
+
+        <div class="">
+
+            <iv-searh-result
+                    [source]="filteredSource"
+                    [(currentPage)]="currentPage"
+                    [currentSearchID]="routeParams.id"
+                    [currentUserID]="session.id"
+                    [currentUserName]="session.email"
+                    [sentimentSummary]="source.data.sentimentSummary"
+                    (onTabChange)="currentTab=$event"
+                    [top5Ave]="source.data.topAveList"
+                    [top5Reach]="source.data.topReachList"
+
+                (currentPageChange)="onPageChange($event)" (onDownload)="download()" (onSortingChange)="onSort($event)"></iv-searh-result>
+        </div>
+
+
+    </ng-container>
+    <div>
+        <iv-saved-search-list *ngIf="!filteredSource"></iv-saved-search-list>
+    </div>
+</div>
+<iv-save-search [(Show)]="showSaveSearchDialouge" [SearchID]="currentSearchID"></iv-save-search>

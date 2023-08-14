@@ -1,0 +1,142 @@
+<div class="PageTitleSection">
+  <div class="TitleFrame">
+    <span class="backarrow material-symbols-outlined" routerLink="/dashboard">
+      keyboard_backspace
+    </span>
+    <span class="Title Headline3">Industry Dashboard </span>
+    <div class="HeaderIcons">
+      <div class="topIcons_Text btn col">
+        <span class="topIcons material-symbols-outlined pr-2 pb-1 pt-1">
+          post_add
+        </span>
+        <span class="IconText">SAVE</span>
+      </div>
+
+      <div class="topIcons_Text btn">
+        <span class="topIcons material-symbols-outlined pr-2 pb-1 pt-1">
+          more_vert
+        </span>
+        <span class="IconText">MORE</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex flex-row brandDashboard">
+  <iv-dashboard-sidebar></iv-dashboard-sidebar>
+  <div>
+    <div class="container-fluid brand-dashboard">
+      <div class="brand card-body">
+        <div class="topDashboard">
+          <div class="col-4">
+            <span class="Dashboard-Name"> DashBoard Name</span>
+          </div>
+          <div class="download col-4">
+            <select name="" id="" class="select">
+              <option selected>DownLoad</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <label class="share" for="">Share</label>
+            <span class="icon material-symbols-outlined"> more_vert </span>
+          </div>
+        </div>
+        <div class="Search_time row no-gutters">
+          <div
+            class="search d-flex flex-column col col-lg-9"
+            (click)="openSelectSearch()"
+          >
+            <div class="d-flex flex-row justify-content-between selarr">
+              <label class="Select_Search"> Select Search </label>
+              <span class="icon-1 material-symbols-outlined">
+                arrow_drop_down
+              </span>
+            </div>
+            <div class="d-flex flex-row" *ngIf="savedSearch">
+              <button class="subSearch">{{ savedSearch.savedas }}</button>
+              <span class="edit"> Edit Sources </span>
+            </div>
+          </div>
+          <div class="time col col-lg-3">
+            <div class="d-flex flex-row">
+              <label class="Timeline" for="Timeline"> Timeline </label>
+              <span class="icon-2 material-symbols-outlined">
+                arrow_drop_down
+              </span>
+            </div>
+            <div class="d-flex flex-row time_days">
+              <button class="btn label" for="">1D</button>
+              <button class="btn label" for="">1W</button>
+              <button class="btn label" for="">1M</button>
+              <button class="btn label" for="">3M</button>
+              <button class="btn label" for="">6M</button>
+              <button class="btn label" for="">1Y</button>
+              <button class="btn label" for="">Custom</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="widgets">
+          <div class="icluded d-flex flew-row justify-content-between">
+            <label for=""> Included Widgets </label>
+            <span class="icon-3 material-symbols-outlined">
+              arrow_drop_down
+            </span>
+          </div>
+          <div class="addOn d-flex flex-row">
+            <div class="outlet">
+              <img src="../../../../assets/widget/1.png" alt="image" />
+              <label class="article" for="">Voulme Analysis</label>
+            </div>
+            <div class="outlet">
+              <img src="../../../../assets/widget/icon.png" alt="image" />
+              <label class="article" for="">Sentiment Analysis</label>
+            </div>
+            <div class="outlet">
+              <img src="../../../../assets/widget/3.png" alt="image" />
+              <label class="article" for="">Sentiment Over Time</label>
+            </div>
+            <div class="outlet">
+              <img src="../../../../assets/widget/4.png" alt="image" />
+              <label class="article" for="">Coverage Over Time</label>
+            </div>
+            <div class="outlet">
+              <img src="../../../../assets/widget/5.png" alt="image" />
+              <label class="article" for="">Media Type</label>
+            </div>
+            <div class="outlet">
+              <img src="../../../../assets/widget/3.png" alt="image" />
+              <label class="article" for="">Reach Over Time</label>
+            </div>
+            <div class="outlet-1" (click)="openBottomSheet()">
+              <img src="../../../../assets/widget/add.png" alt="image" />
+              <label class="article" for="">Add More</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div_button">
+        <button class="brand_button" (click)="getUserFormData()">
+          Generate Industry Analysis
+        </button>
+      </div>
+    </div>
+
+    <div class="widgetContainer">
+      <ng-container *ngFor="let widget of widgets; let i = index">
+        <iv-tableau
+          serverUrl="https://devamx.com"
+          report="{{ widgetName[i] }}"
+          [ticket]="widget"
+          site="site01"
+          [filters]="dashboardFilters()"
+          style="display: inline-flex; margin-left: 13px; margin-top: 12px"
+          [options]="options"
+          [id]="i"
+        >
+        </iv-tableau>
+      </ng-container>
+    </div>
+  </div>
+</div>

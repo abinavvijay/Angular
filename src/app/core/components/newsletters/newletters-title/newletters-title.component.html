@@ -1,0 +1,35 @@
+<div class="newslettertittle">
+   <div class="background" [style.background-image]="selectedBackground">
+    <button class="changebackground btn btn-primary">
+        <span class="material-symbols-outlined">
+            add_photo_alternate
+            </span>
+
+        <span class="text">Change Background</span>
+
+        <select class="image" [(ngModel)]="selectedBackground"  >
+                <option *ngFor="let image of backgroundImages">{{image}}</option>
+                    </select>
+    </button>
+
+    <!-- <div class="img" [style.background-image]="selectedBackground">
+
+    </div> -->
+    <div class="maintitle">
+        <input type="text" class="newslettertitle basic Headline3 " placeholder="NewsLetter title" [(ngModel)]="title" (ngModelChange)="OnInputTitle()">
+
+        <textarea class="description1" placeholder="  This will the space for description and additional information about the saved search or whichever it may represent as per the user’s need"
+        [(ngModel)]="description" (ngModelChange)="OnInputTitle()"></textarea>
+        <!-- <input type="text" class="description1"
+           rows="2" column="40"/> -->
+    <div class="downpart d-flex">
+          <img src="../../../../../assets/Logos/Alphametrix_Logo_011.png"
+     class="LogosAlphametrix">
+
+     <label class="published">
+        Published On 24 July 2022 | 6000Results
+     </label>
+    </div>
+    </div>
+</div>
+</div>

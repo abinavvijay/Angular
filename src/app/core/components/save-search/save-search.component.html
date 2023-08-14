@@ -1,0 +1,48 @@
+<div id="outer-container" [hidden]="!_show">
+
+    <div id="inner-container">
+        <div id="centered-form">
+            <div class="form_bg p-4">
+
+                <form [formGroup]="form" #formDir="ngForm" (submit)="submit()">
+                    <div class="form-group">
+                        <div class="search_description mb-4">
+                            <div style="width:620px; display: flex;"> <span class="header_text pb-4">Save Search</span> <span
+                                    style="margin-right:auto ;"></span> <mat-icon [ngStyle]="{'color':'black'}" (click)="CancelForm()">close</mat-icon></div>
+                            <div class="label_text "> Search Name</div>
+                            <input type="text" autocomplete="off" placeholder="Provide a name for this search" id="name"
+                                class="form-control" formControlName="name" required>
+
+                            <div *ngIf="form.get('name')?.invalid && (form.get('name')?.dirty || form.get('name')?.touched)"
+                                class="alert-danger">
+                                <div *ngIf="form.get('name')?.hasError('required')">
+                                    Name is required.
+                                </div>
+
+                            </div>
+
+                            <div class="label_text "> Search Description</div>
+
+                            <textarea class="form-control" placeholder="Provide Description for this search"
+                                formControlName="description">
+                                </textarea>
+
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="form-group " style="padding: 0 24px;display: flex;">
+
+                        <span *ngIf="ifSpinner" class="spinner alert-success">
+                            <mat-spinner [diameter]="20"> </mat-spinner> <span class="  ps-2 pe-2"> Saving Search</span>
+                        </span>
+                        <span style="margin-right:auto ;"></span>
+                        <button type="button" mat-raised-button color="#41b6ff" class="btn btn-default me-4"
+                            (click)="CancelForm()" [disabled]="ifSpinner">Cancel</button>
+                        <button type="submit" mat-raised-button color="primary" class="btn btn-default "
+                            [disabled]="form.invalid||ifSpinner">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

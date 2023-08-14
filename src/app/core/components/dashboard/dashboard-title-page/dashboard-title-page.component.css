@@ -1,0 +1,111 @@
+.dashboard-main{
+  width: 100%;
+  height: auto;
+  background-color: var(--bw-grey-01);
+  overflow: hidden;
+}
+.PageTitleSection {
+  width: auto;
+  height: 92px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start ;
+  padding: 16px 22px 0;
+  border: solid 1px var(--bw-grey-01);
+  background-color: var(--bw-white);
+}
+
+.TitleFrame {
+  width: stretch;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 0 6px;
+  padding: 6px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+    .backarrow{
+  margin-top: 8px;
+  cursor: pointer;
+    }
+
+.Title {
+  width: auto;
+  height: 44px;
+  flex-grow: 1;
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: -0.34px;
+  text-align: left;
+  color: var(--bw-black);
+  white-space: nowrap;
+  margin-top: 8px;
+  margin-left: 3px;
+}
+
+.Title2{
+  color: var(--bw-grey-04);
+}
+
+.HeaderIcons{
+  width: auto;
+  height: auto;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-top: -5px;
+
+}
+
+.topIcons_Text{
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.topIcons{
+width: 40px;
+height: 40px;
+text-align: center;
+color: dodgerblue;
+border: 3px solid var(--bw-grey-01);
+
+}
+
+.IconText{
+  font-size: 8px;
+  width: auto;
+  height: auto;
+  font-weight: 700;
+  color: dodgerblue;
+  margin-top: 10px;
+}
+
+
+/* .no-gutters{
+margin: 12px 12px 12px 12px;
+} */
+
+.items{
+  left: 12px;
+  position:relative;
+  overflow: scroll;
+}
+
+.widget{
+  margin-left: 350px;
+  margin-bottom: 200px;
+}

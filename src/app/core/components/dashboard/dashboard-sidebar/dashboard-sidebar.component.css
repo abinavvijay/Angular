@@ -1,0 +1,247 @@
+/*
+
+.Advanced-Dashboard-Author-Impact {
+    width: auto;
+    height: auto;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 0 100px;
+    background-color: var(--bw-grey-01);
+    position: static;
+  }
+
+  .PageTitleSection {
+    width: 1920px;
+    height: 92px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start ;
+    padding: 16px 22px 0;
+    border: solid 1px var(--bw-grey-01);
+    background-color: var(--bw-white);
+  }
+
+  .TitleFrame {
+    width: stretch;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 0 6px;
+    padding: 6px 0;
+  }
+
+
+
+      .backarrow{
+    margin-top: 8px;
+    cursor: pointer;
+      }
+
+  .Title {
+    width: auto;
+    height: 44px;
+    flex-grow: 1;
+    font-family: Inter;
+    font-size: 37px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: -0.74px;
+    text-align: left;
+    color: var(--bw-black);
+    white-space: nowrap;
+  }
+
+  .HeaderIcons{
+    width: auto;
+    height: auto;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 1079px;
+    margin-top: -5px;
+
+  }
+
+  .topIcons_Text{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topIcons{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: dodgerblue;
+  border: 3px solid var(--bw-grey-01);
+
+  }
+
+  .IconText{
+    font-size: 8px;
+    width: auto;
+    height: auto;
+    font-weight: 700;
+    color: dodgerblue;
+    margin-top: 10px;
+  } */
+
+  .LeftPannel {
+    width: auto;
+    height: auto;
+    /* max-width: 314px; */
+    /* min-width: ; */
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 12px;
+    position: static;
+    margin-right: 12px;
+    z-index: 1;
+        align-items: stretch;
+  }
+  
+  .card:focus,
+  .card:active,
+  .card:hover {
+    box-shadow: 0 0 0 0.2rem #578fe9 !important;
+    outline-color: #578fe9 !important;
+  }
+  
+.card{
+  width: 100%;
+  align-items: stretch;
+
+}
+
+  .brand{
+    height: 128px;
+    width: 294px;
+  }
+  .Group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 24px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  label {
+    /* flex-basis: 100%; */
+    height: 18px;
+    flex-grow: 0;
+    margin: 6px 0 3px 6px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    /* letter-spacing: -0.3px; */
+    text-align: left;
+    color: var(--brand-alpha-blue);
+  }
+  
+  .info {
+    width: 100%;
+    /* align-items: stretch; */
+    
+    height: 32px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    /* line-height: 1.33;
+    letter-spacing: -0.24px; */
+    text-align: left;
+    color: var(--bw-grey-04);
+  }
+  
+  .template-helper {
+    width: 119px;
+    height: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 4px;
+    border-radius: 12px;
+    background-color: var(--bw-grey-01);
+    margin-top: 10px;
+  }
+  
+  .chart {
+    width: 100%;
+    height: 16px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: center;
+    color: var(--bw-black);
+  }
+
+  /* Media Query */
+
+  @media screen and (min-width: 420px) and (max-width: 768px) {
+
+
+
+    .Title {
+      width:stretch;
+      font-size: 30px;
+    }
+
+    .HeaderIcons{
+      width: 258px;
+      margin-left: 290px;
+    }
+    .LeftPannel{
+      width: 250px;
+      margin-left: 6px;
+    }
+
+    label{
+    font-size: 12px;
+    }
+
+    .info{
+    font-size: 10.5px;
+    }
+
+
+    .template-helper{
+      width: 100px;
+      height: 24px;
+      margin-left: -3px;
+      margin-top: 20px;
+    }
+    .chart{
+      width: auto;
+      padding: auto;
+      font-size: 9px;
+      text-align: center;
+    }
+
+
+  }

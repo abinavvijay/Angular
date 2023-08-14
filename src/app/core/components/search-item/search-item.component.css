@@ -1,0 +1,156 @@
+
+
+
+
+.ContentLeft {
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 0;
+  }
+
+  .search-item-title{
+    height:25px;
+    align-self: stretch;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: -0.34px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+
+
+
+
+  @media only screen and  ((-webkit-device-pixel-ratio: 1) or (-webkit-device-pixel-ratio: 1.1) or (-webkit-device-pixel-ratio: 1.25) ) {
+    .search-item-text_height{ height: 88px;}
+    
+  }
+
+  @media only screen and   ((-webkit-device-pixel-ratio: 1.5) or (-webkit-device-pixel-ratio: 1.1) or (-webkit-device-pixel-ratio: 1.25) )    {
+    .search-item-title{height:20px;overflow-y: hidden;display: block !important;} 
+    .search-item-text_height{ height: 78px;}
+  }
+
+
+  .search-item-text {
+    height: 50px;
+    align-self: stretch;
+    flex-grow: 0;
+    /* font-family: Inter; */
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-grey-04);
+  }
+
+  img.ChannelLogos {
+    width: 12px;
+    height: 12px;
+    flex-grow: 0;
+    object-fit: contain;
+  }
+  .other-details{
+    height: 24px;
+    flex-grow: 1;
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--bw-grey-04);
+  }
+
+  .placeholder {
+    width: 200px;
+    height: 196px;
+    padding: 10px;
+
+  }
+
+  img.articleImage {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
+
+  .search-match{
+
+    height: 18px;
+    margin: 0 0 16px 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-grey-03);
+    margin-top: 20px;
+  }
+
+
+  span{
+    color: var(--bw-black)  }
+
+    .sentiment{
+      margin-left: 0px !important;
+    }
+
+    .title{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+
+      -webkit-line-clamp: 1; /* number of lines to show */
+      -webkit-box-orient: vertical;
+    }
+
+    .item-action{
+      cursor: pointer;
+    }
+
+    .bookMark{
+      color: blue;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.comment{
+  width: 250px;
+  height: 170px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px gray;
+  background-color: white;
+position: absolute;
+left: 100px;
+}
+
+.commentInput{
+  width: auto;
+  height: stretch;
+  border: none;
+  outline: none;
+  resize: none;
+}

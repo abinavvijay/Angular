@@ -1,0 +1,155 @@
+<!-- <div class="d-flex flex-row"> -->
+<!-- <app-settings></app-settings> -->
+<!-- <div class="layout"> -->
+<div class="savedSearchlistTopBar">
+  <div class="selectAllGroup">
+    <input type="checkbox" name="" id="" class="checkbox" />
+    <span class="selectAll">Select All</span>
+  </div>
+  <div class="inputSearch">
+    <input
+      type="text"
+      name=""
+      id=""
+      class="inputText"
+      placeholder="Search in dashboards"
+    />
+    <span class="iconSeacrh material-symbols-outlined"> search </span>
+  </div>
+  <div class="Button-Tertiary btn btn-primary">
+    <span class="addIcon material-symbols-outlined"> add </span>
+    <label class="Add-New-Tag" (click)="openAddPopup()"> Add User </label>
+  </div>
+</div>
+<div class="Line-178"></div>
+
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">
+        <label class="commonHead margin-1">Name</label>
+      </th>
+      <th scope="col">
+        <label class="commonHead margin-2"> Status </label>
+      </th>
+      <th scope="col">
+        <label class="commonHead margin-3"> Access Level </label>
+      </th>
+      <th scope="col">
+        <label class="commonHead margin-4"> Added On </label>
+      </th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="body">
+      <td>
+        <div class="tags d-flex flex-row">
+          <input type="checkbox" class="checkbox" />
+          <img src="" alt="AC" class="image-bg" />
+          <div class="tagName d-flex flex-column">
+            <label class="Name"> Anuran Chakraborty </label>
+            <span class="emailName SmallText">
+              anuran.chakraborty@infovision.com
+            </span>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="status btn btn-success">
+          <span class="Active"> Active </span>
+        </div>
+      </td>
+      <td>
+        <label class="analyst"> Analyst </label>
+      </td>
+      <td>
+        <label class="date Body2"> 02 Jun 2022 </label>
+      </td>
+      <td>
+        <div class="icons">
+          <span class="icons-1 material-symbols-outlined" (click)="openPopup()">
+            edit_square
+          </span>
+        </div>
+      </td>
+      <td>
+        <button
+          class="matmen"
+          mat-icon-button
+          [matMenuTriggerFor]="menu"
+          aria-label="Example icon-button with a menu"
+        >
+          <mat-icon class="vert">more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <span>Disable User</span>
+          </button>
+          <button mat-menu-item (click)="openDelPopup()">
+            <span>Delete User</span>
+          </button>
+          <button mat-menu-item>
+            <span>Edit</span>
+          </button>
+        </mat-menu>
+      </td>
+    </tr>
+    <tr class="body">
+      <td>
+        <div class="tags d-flex flex-row">
+          <input type="checkbox" class="checkbox" />
+          <img src="" alt="AC" class="image-bg" />
+          <div class="tagName d-flex flex-column">
+            <label class="Name"> Anuran Chakraborty </label>
+            <span class="emailName SmallText">
+              anuran.chakraborty@infovision.com
+            </span>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="status btn btn-success">
+          <span class="Active"> Active </span>
+        </div>
+      </td>
+      <td>
+        <label class="analyst"> Analyst </label>
+      </td>
+      <td>
+        <label class="date Body2"> 02 Jun 2022 </label>
+      </td>
+      <td>
+        <div class="icons">
+          <span class="icons-1 material-symbols-outlined" (click)="openPopup()">
+            edit_square
+          </span>
+        </div>
+      </td>
+      <td>
+        <button
+          class="matmen"
+          mat-icon-button
+          [matMenuTriggerFor]="menu"
+          aria-label="Example icon-button with a menu"
+        >
+          <mat-icon class="vert">more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <span>Disable User</span>
+          </button>
+          <button mat-menu-item>
+            <span>Delete User</span>
+          </button>
+          <button mat-menu-item>
+            <span>Edit</span>
+          </button>
+        </mat-menu>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- </div>
+          </div> -->

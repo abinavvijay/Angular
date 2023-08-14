@@ -1,0 +1,561 @@
+/*
+.AlphaMerticX_Logo{
+  width: 196px;
+  height: 34.1px;
+  margin: 30px 352px 41.4px 0;
+  object-fit: contain;
+}
+
+.Login {
+  width: 98px;
+  height: 44px;
+  font-family: Inter;
+  font-size: 37px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: -0.74px;
+  text-align: left;
+  color: var(--bw-black);
+}
+
+.Login-to-Alphametricx{
+  width: 171px;
+  height: 20px;
+  margin: 16px 377px 40px 0;
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: -0.34px;
+  text-align: left;
+  color: var(--bw-grey-04);
+}
+
+.Register_Email_Label{
+  width: 116px;
+  height: 18px;
+  flex-grow: 0;
+  margin: 0 264px 8px 0;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: var(--bw-grey-04);
+
+}
+
+
+.Password_Label{
+  width: 69px;
+  height: 18px;
+  flex-grow: 0;
+  margin: 20px 311px 8px 0;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: var(--bw-grey-04);
+}
+
+.Register_Email{
+  width: 380px;
+  height: 52px;
+  flex-grow: 0;
+  margin: 8px 0 0;
+  padding: 16px 167px 18px 16px;
+  border-radius: 4px;
+  border: solid 1px var(--bw-grey-02);
+  background-color: var(--bw-white);
+}
+
+.Password{
+  width: 380px;
+  height: 52px;
+  flex-grow: 0;
+  margin: 8px 0 0;
+  padding: 16px 167px 18px 16px;
+  border-radius: 4px;
+  border: solid 1px var(--bw-grey-02);
+  background-color: var(--bw-white);
+}
+
+.Login_Button{
+  width: 380px;
+  height: 52px;
+  flex-grow: 0;
+  margin: 40px 0 20px;
+  padding: 16px 167px 16px 168px;
+  border-radius: 4px;
+  background-color: var(--brand-alpha-blue);
+
+}
+
+.Trouble_In_Login{
+  width: 113px;
+  height: 16px;
+  flex-grow: 0;
+  margin: 0 267px 0 0;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: -0.26px;
+  text-align: left;
+  color: var(--brand-alpha-blue);
+}
+
+.Contact_Us{
+  width: 69px;
+  height: 16px;
+  flex-grow: 0;
+  margin: 0 18px 4px 0;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: -0.26px;
+  text-align: left;
+  color: var(--brand-alpha-blue);
+}
+
+.Terms_and_Condition{
+  width: 135px;
+  height: 16px;
+  flex-grow: 0;
+  margin: 0 35px 4px 18px;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: -0.26px;
+  text-align: left;
+  color: var(--brand-alpha-blue);
+}
+
+hr{
+  margin-top: 150px;
+}
+
+.Copy_Right{
+  width: 124px;
+  height: 20px;
+  flex-grow: 0;
+  margin: 0 0 0 35px;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: -0.26px;
+  text-align: left;
+  color: var(--bw-grey-03);
+}
+
+footer{
+  position: sticky;
+}
+
+.Wallpaper{
+  width: 47vw;
+  height: auto;
+  border-image-width: auto;
+  margin-top: 0%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 720px) {
+
+
+
+}
+
+.Rectangle-710 {
+  width: 47vw;
+  height: 5vh;
+  margin-top: -2px;
+  margin-left: 0;
+  background-color: #394dbc;
+} */
+
+
+
+/* New design */
+
+
+.containers{
+  background-image: url(../../../../assets/Login/wallpaper/Login_Background@2x.png);
+  background-repeat: no-repeat;
+  background-size:cover ;
+  width: auto;
+  height: 95vh;
+}
+
+
+.left_portion{
+  margin: 80px 0 132px 140px;
+}
+
+.logo{
+  width: 172px;
+  height: 48px;
+  margin: 0 68px 12px 0;
+  object-fit: contain;
+}
+
+.title{
+  width: 600px;
+  height: 56px;
+  font-family: Inter;
+  font-size: 48px;
+  /* font-weight: bold; */
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: -1.44px;
+  text-align: left;
+  color: #000;
+}
+
+.sliderImage_1{
+  width: 600px;
+  height: 400px;
+  margin: 52px 0 6px;
+  object-fit: contain;
+}
+
+/* right_portion */
+
+.right_portion{
+  width: 380px;
+  height: 466px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+  margin: 150px 180px 202px auto;
+  padding: 48px 32px 32px;
+  border-radius: 16px;
+  box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.06);
+  border: solid 1px #eceff3;
+  background-color: #fff;
+}
+
+.LoginTitle{
+  height: 66px;
+  align-self: stretch;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 10px;
+  padding: 0;
+}
+
+.Login{
+  height: 32px;
+  align-self: stretch;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 27px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: -0.54px;
+  text-align: left;
+  color: #000;
+}
+
+.WelcomeTitle{
+  height: 24px;
+  align-self: stretch;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5c5e60;
+}
+
+.InputFields{
+  width: 316px;
+  height: 236px;
+  flex-grow: 0;
+  background-color: white;
+  /* border: white; */
+}
+
+.InputEmail{
+  background-color: white;
+  border: none;
+
+}
+
+
+
+.email{
+  width: 316px;
+  height: 60px;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  margin: 0 0 32px;
+  padding: 18px 0;
+  background-color: #fff;
+  border: none;
+  border-bottom: solid 1px #ced7e1;
+  outline: none;
+}
+
+.material-symbols-outlined{
+  margin-top: 30px;
+  margin-left: -30px;
+}
+
+
+.LoginButton{
+  width: 316px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 10px 0 32px 0;
+  padding: 14px 24px;
+  border-radius: 8px;
+  background-color: #375dd7;
+}
+
+.Log {
+  flex-grow: 1;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.07;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #fff;
+  margin-right: 3px;
+}
+
+
+.Forgotpassword{
+  height: 20px;
+  align-self: stretch;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: -0.26px;
+  text-align: left;
+  color: #375dd7;
+}
+
+/* Footer */
+
+footer{
+  width: auto;
+  height: 32px;
+  /* margin: 202px 0 0; */
+  padding: 6px 33px 6px 24px;
+  background-color: #fff;
+}
+
+.threeFooters{
+  width: 259px;
+  height: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  margin: 0 1019px 0 0;
+  padding: 0;
+}
+
+.footerTitle{
+  width: auto;
+  height: 20px;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.82;
+  letter-spacing: -0.22px;
+  text-align: left;
+  color: #5c5e60;
+}
+
+.copyRight{
+  width: auto;
+  height: 20px;
+  margin-left: auto;
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.82;
+  letter-spacing: -0.22px;
+  text-align: right;
+  color: #5c5e60;
+}
+
+.text-danger{
+  margin-top: -25px;
+}
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+
+  .containers {
+    height: 700px;
+    width: 765px;
+  }
+  .left_portion {
+    height: 250px;
+    width: 200px;
+    margin-left: 30px;
+  }
+
+  .logo {
+    width: 130px;
+    height: 38px;
+    font-size: 32px;
+  }
+
+  .title {
+    width: 450px;
+    height: 36px;
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
+
+  .Intelligence title {
+    width: 400px;
+    height: 36px;
+  }
+
+  .sliderImages {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sliderImage_1 {
+    width: 450px;
+    height: 520px;
+    margin-top: -60px;
+  }
+
+  .right_portion {
+    width: 310px;
+    height: 370px;
+    margin-left: 200px;
+  }
+
+  .LoginTitle {
+    font-size: 20px;
+  }
+
+  .Login {
+    font-size: 20px;
+    margin-bottom: -5px;
+  }
+
+  .WelcomeTitle {
+    font-size: 12px;
+    margin-bottom: -4px;
+  }
+
+  .InputFields {
+    width: 256px;
+    height: 236px;
+    margin-top: -5px;
+    background-color: white;
+
+
+  }
+
+  .email {
+    width: 256px;
+    height: 40px;
+  }
+
+  .LoginButton {
+    width: 254px;
+    height: 40px;
+    margin-top: 0px;
+    margin-left: 1px;
+  }
+
+  .Forgotpassword {
+    height: 20px;
+    margin-top: -45px;
+    font-size: 11px;
+  }
+
+  .material-symbols-outlined {
+    height: 8px;
+    width: 8px;
+    margin-top: 10px;
+    margin-left: -25px;
+  }
+
+  footer {
+    width: 550px;
+    height: 20px;
+  }
+
+  .threeFooters {
+    width: 330px;
+    height: 30px;
+    /* gap: 5px; */
+  }
+
+  .footerTitle {
+    width: 150px;
+    height: 20px;
+    margin-left: -8px;
+    margin-right: 5px;
+  }
+
+  .copyRight {
+    width: 250px;
+    height: 20px;
+    margin-left: -715px;
+    white-space: nowrap;
+  }
+
+}

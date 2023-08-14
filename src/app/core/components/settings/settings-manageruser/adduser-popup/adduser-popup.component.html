@@ -1,0 +1,36 @@
+<h1 mat-dialog-title class="change">Add New User</h1>
+<div mat-dialog-content>
+   <div class="name"> 
+    <div class="form-group col-6">
+        <label for="" class="Password_Label">First Name</label>
+        <input type="text" class="form-control Password" placeholder="First Name">
+      </div>
+      <div class="form-group col-6">
+        <label for="" class="Password_Label">Last Name</label>
+        <input type="text" class="form-control Password" placeholder="Last Name">
+      </div>
+    </div>
+    <div class="email">
+      <div class="form-group col-6">
+        <label for="" class="Password_Label">Email <Address></Address></label>
+        <input type="email" class="form-control Password" placeholder="example@gmail.com">
+      </div>
+
+      <div class="drop d-flex flex-row">
+        <label class="access">
+          Access Level
+        </label>
+      <mat-form-field appearance="fill" class="formfield">
+        <mat-label>Access Level</mat-label>
+        <mat-select>
+          <mat-option value="Admin">Admin</mat-option>
+          <mat-option value="two">Second option</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+</div>
+</div>
+<div mat-dialog-actions class="changes">
+  <button mat-button class="cancel" (click)="onNoClick()">Cancel</button>
+  <button mat-button class="update" cdkFocusInitial>Add User</button>
+</div>

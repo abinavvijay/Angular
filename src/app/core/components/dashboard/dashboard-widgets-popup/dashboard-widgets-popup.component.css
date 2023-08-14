@@ -1,0 +1,107 @@
+.widgets{
+    width: 1070px;
+    height: 132px;
+    padding: 12px;
+    margin-left: 19px;
+    /* margin: 0 0 10px; */
+  /* overflow: hidden; */
+    background-color: var(--bw-white);
+  }
+
+  .Title{
+    width: auto;
+    height: auto;
+    margin: 50px 0 0 90px;
+  }
+
+  .Selectwidget{
+    width: auto;
+    height: auto;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+  }
+
+  .icluded{
+    width: auto;
+    height: auto;
+    margin: 50px 0 0 90px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+  }
+
+  .addOn{
+    width: auto;
+    height: 84px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 20px 0 0 90px;
+    padding: 0;
+  }
+
+  .outlet{
+    width: 56px;
+    height: 56px;
+    margin: 0 0 4px;
+    padding: 12px 12px 12px 12px;
+    border-radius: 8px;
+    background-color: var(--brand-alpha-blue);
+  }
+
+  .outlet-1{
+    width: 56px;
+    height: 56px;
+    margin: 0 0 4px;
+    padding: 12px 12px 12px 12px;
+    border-radius: 8px;
+    border: solid 1px var(--bw-grey-01);
+    background-color: var(--bw-white);
+  }
+
+  .article{
+    width: 59px;
+    height: 24px;
+    margin: 16px 4px 8px -15px;
+    font-family: Inter;
+    font-size: 9px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.18px;
+    text-align: center;
+    color: var(--bw-black);
+  }
+
+  hr{
+    width: 82vw;
+    margin: 150px 30px 0 90px;
+  }
+
+
+  .buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -300px;
+    margin-top: 40px;
+  }
+
+  .closeButton{
+    margin-right: 23px;
+    /* background-color: rgb(235, 242, 245); */
+    /* color: rgb(18, 57, 130); */
+    color: var(--brand-alpha-blue);
+    background-color: #e4e9fb;
+
+  }
+
+  .UpdateButton{
+    background-color: var(--brand-alpha-blue);
+
+  }
+

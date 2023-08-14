@@ -1,0 +1,78 @@
+<mat-toolbar class="ps-4 pe-4">
+  <img id="logo" class="ps-2" src="./assets/Logos/logo.png" alt="AlphametriX" />
+  <ng-container *ngIf="session">
+    <iv-menu [menuIndex]="'main'"></iv-menu>
+    <span class="header-spacer" style="margin-right: auto;"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon class="header-icon">help</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" (click)="openNotification()">
+      <mat-icon class="header-icon">notifications</mat-icon>
+
+    </button>
+    <!-- <div *ngFor="let user of userId"> -->
+
+    <span class="userName">{{session.fullName}}
+
+    </span>
+   
+    <!-- </div> -->
+    <img #img src="https://i.pinimg.com/originals/97/31/02/9731022f0be7c965e880505461643850.jpg" alt="User Profile"
+      class="user-image" (click)="displayProfile = !displayProfile">
+    <div #profile *ngIf="displayProfile" class="profile" [style.left.px]="plot.left-340" [style.top.px]="plot.top+plot.height+10">
+     <div style="width: 100%; text-align:center;">
+      <img  src="https://i.pinimg.com/originals/97/31/02/9731022f0be7c965e880505461643850.jpg" alt="User Profile"
+        class="user-image1">
+        <div class="user-name">{{session.fullName}}</div>
+        <div class="user-email">{{session.email}}</div>
+      </div>
+      <div class="rich-ddl-item ms-4">
+        
+      </div>
+      <div class="rich-ddl-item ms-4">
+        My Account
+      </div>
+      <div class="rich-ddl-item ms-4 mb2" (click)="logout()" style="cursor: pointer;">
+        Logout
+      </div>
+      
+    </div>
+
+  </ng-container>
+</mat-toolbar>
+
+
+
+
+
+<div id="outer-container" [hidden]="!spin">
+  <div id="inner-container">
+    <div id="centered-box">
+      <mat-spinner></mat-spinner>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="outer-container" [hidden]="spin==0">
+  <div id="inner-container">
+
+  </div>
+</div>
+<div id="centered-box" [hidden]="spin==0">
+  <mat-spinner *ngIf="spin==1"></mat-spinner>
+  <div class="No-result" *ngIf="spin==2">
+    <img src="assets/images/nodata.svg" alt="" class="nodata" />
+    <div class="No-Data-Available">
+      No Data Available
+    </div>
+    <div class="no-data-message">
+      There is no data avaiable for your search query. Try reframing your query or change your filters
+    </div>
+    <button class="button_primary" (click)="onNoDataOkay()"> Okay</button>
+  </div>
+
+</div>
+
+<router-outlet></router-outlet>

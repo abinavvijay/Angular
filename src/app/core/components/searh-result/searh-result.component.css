@@ -1,0 +1,46 @@
+.outer{
+    height:200px;
+    border:1px solid grey;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    width:500px;
+  }
+  
+  #red{
+    background-color:red;
+    width:100px;
+    flex-basis:100%;
+  }
+  .blue-1{
+    flex-basis:50%;
+    width:100px;
+    background-color:blue;
+  }
+
+  ::ng-deep .ngx-tableau-viz{
+
+   
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc((100% - 1600px) /3);     
+}
+
+iv-tableau{
+  margin-top: 10px;
+}
+iv-tableau:nth-child(odd) {
+  width:calc(48.7vw);
+  background-color: brown;
+}
+iv-tableau:nth-child(even) {
+  width:calc(48.7vw);
+  float:right;
+  background-color: red;
+} 
+
+  .dashboard_widgets{
+    padding-top: 10px;
+    margin-top: 10px;
+  }

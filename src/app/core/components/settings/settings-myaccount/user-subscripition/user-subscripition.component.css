@@ -1,0 +1,293 @@
+.container{
+    width: auto;
+    height: auto;
+  }
+
+
+
+  .subscriptionHeading{
+    width: 1076px;
+    height: 80px;
+    margin: 24px 24px 51px;
+    padding: 0 8px 24px 0;
+  }
+
+  .heading{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .AlphametricX{
+    width: 230px;
+    height: 56px;
+    margin: 0 726px 0 0;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.27;
+    letter-spacing: -0.44px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+
+  .Headline{
+    width: 230px;
+    height: 56px;
+    margin: 0 726px 0 0;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.27;
+    letter-spacing: -0.44px;
+    text-align: left;
+    color: var(--brand-tm);
+  }
+
+  .activeButton{
+    width: 60px;
+    height: 28px;
+    gap: 10px;
+    margin: 0 0 8px 79px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: var(--chart-green);
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: center;
+    color: var(--bw-white);
+  }
+
+  .ExpiresDate {
+    width: 139px;
+    height: 20px;
+    margin: 8px 0 0 0px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: -0.26px;
+    text-align: right;
+    color: var(--bw-grey-04);
+  }
+
+  .text-style-1{
+    font-weight: bold;
+  }
+
+  .discriptionDiv{
+    width: auto;
+    height: auto;
+    margin-top: -68px;
+  }
+
+  .discription{
+    width: 472px;
+    height: 40px;
+    margin: 0px 66px 23px 24px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-grey-04);
+  }
+
+  .upgradeButton{
+    width: 83px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0px 32px 27px 178px;
+    padding: 8px 0;flex-grow: 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: right;
+    color: var(--brand-alpha-blue);
+    border: none;
+    background-color: var(--bw-white);
+  }
+
+  .hr-1{
+    width: stretch;
+    margin: 23px 24px 0px;
+    background-color: var(--bw-grey-01);
+  }
+
+  .volumeDetails{
+    width: 1124px;
+    margin: 40px 40px 24px 24px ;
+  }
+
+  .numberDetails{
+    width: 269px;
+    height: 84px;
+    margin: 0px 0 39px 0px;
+    padding: 0 98px 0 97px;
+  }
+
+  .outCome{
+    width: 74px;
+    height: 32px;
+    flex-grow: 0;
+    margin: 0 0 16px;
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: -0.54px;
+    text-align: center;
+    color: var(--bw-black);
+  }
+
+  .resultNum{
+    font-weight: bold;
+  }
+
+
+  .Active-Users {
+    width: 49px;
+    height: 36px;
+    flex-grow: 0;
+    margin: 16px 12px 0 13px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    text-align: center;
+    color: var(--bw-grey-04);
+  }
+
+  .hr-2{
+    width: stretch;
+    margin: 0px 24px 230px;
+    background-color: var(--bw-grey-01);
+  }
+
+  .footer{
+    width: 183px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0px 86px 0 24px;
+    padding: 8px 0;
+    border: none;
+  }
+
+  .need{
+    width: 200px;
+    height: 16px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: right;
+    color: var(--brand-alpha-blue);
+    border: none;
+    background-color: var(--bw-white);
+  }
+
+  .need label{
+    color: var(--bw-grey-04);
+  }
+
+  @media screen and (min-width: 420px) and (max-width: 768px) {
+
+    .AlphametricX{
+        width: 150px;
+        height: 46px;
+        font-size: 15px;
+    }
+
+    .Headline{
+        width: 150px;
+        height: 46px;
+        font-size: 15px;
+    }
+
+    .activeButton{
+        width: 60px;
+    height: 28px;
+    margin-left: -660px;
+    }
+
+    .ExpiresDate {
+        width: 139px;
+        height: 20px;
+        margin-left: -740px;
+
+    }
+
+    .discription{
+        width: 572px;
+        height: 30px;
+        font-size: 12px;
+
+    }
+
+    .upgradeButton{
+        width: 93px;
+        height: 32px;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .numberDetails{
+        width: 59px;
+        height: 84px;
+        margin-right: -80px;
+        /* margin: 0px 0 39px 0px; */
+        /* padding: 0 98px 0 97px; */
+      }
+    .outCome{
+        width: 54px;
+        height: 32px;
+        font-size: 15px;
+        margin-left: -102px;
+        margin-right: -50px;
+
+    }
+
+    .Active-Users{
+        width: 49px;
+    height: 36px;
+    font-size: 15px;
+    margin-left: -102px;
+
+
+    }
+  }

@@ -1,0 +1,186 @@
+<div class="body">
+  <form action="sumbit" class="newsLetterBody">
+  <div class="createNewsLetter">
+    <div class="PageTitle">
+      <div class="title">
+        <label class="news"> Create NewsLetter</label>
+        <div class="HeaderIcons">
+          <div class="topIcons_Text btn" (click)="openSaveNewsLetter()">
+            <span class="topIcons material-symbols-outlined"> post_add </span>
+            <span class="IconText">SAVE</span>
+          </div>
+
+          <div class="topIcons_Text btn">
+            <span class="topIcons material-symbols-outlined"> more_horiz </span>
+            <span class="IconText">MORE</span>
+          </div>
+        </div>
+        <div class="headerIcons"></div>
+      </div>
+    </div>
+  </div>
+  <div class="newsLetterPannels">
+    <div class="SelectSearch" (click)="openSelectSearch()">
+      <div class="d-flex flex-row justify-content-between">
+        <label class="Text"> Select Search </label>
+        <span class="icon-1 material-symbols-outlined"> arrow_drop_down </span>
+      </div>
+      <div
+        class="d-flex flex-row justify-content-between"
+        *ngIf="newsLetterResponse"
+      >
+        <label for="" class="Select">{{ select }}</label>
+        <span class="edit"> Edit Sources </span>
+      </div>
+    </div>
+    <div class="Recipients" (click)="openInputRecipients()">
+      <div class="d-flex flex-row justify-content-between">
+        <label class="Text">Recipients</label>
+        <span class="icon-2 material-symbols-outlined"> arrow_drop_down </span>
+      </div>
+      <div class="SelectionChips">
+        <!-- <label for="" class="keys">12 users, 1 Group</label> -->
+        <label
+          for=""
+          class="keys"
+          *ngIf="emailList.length > 1; else single_Email"
+          >{{ emailList.length }} users</label
+        >
+        <ng-template class="keys" #single_Email>
+          <label for="" class="keys">{{ emailList[0] }}</label>
+        </ng-template>
+      </div>
+      <!-- Input field for recipents -->
+      <div
+        class=" inputRecipents"
+        *ngIf="inputRecipents == true"
+      >
+        <!-- <input
+          type="email"
+          class="inputRecipent"
+          [(ngModel)]="newEmail"
+          [ngModelOptions]="{ standalone: true }"
+          (click)="onPopupClick($event)"
+        />
+        <div class="d-flex flew-row justify-content-end align-items-end m-2">
+          <button
+            type="submit"
+            class="btn btn-primary"
+            (click)="recipentsSubmit()"
+          >
+            Done
+          </button>
+        </div> -->
+          <!-- <iv-recipients-input [(ShowForm)]="inputRecipents" ></iv-recipients-input> -->
+      </div>
+    </div>
+    <div>
+    <div class="Recipients" (click)="openDayPicker()">
+      <div class="d-flex flex-row justify-content-between">
+        <label class="Text">Send On</label>
+        <span class="icon-2 material-symbols-outlined"> arrow_drop_down </span>
+      </div>
+
+      <div id="multiselect-sample" class="control-section SelectionChips">
+        <div class="control-styles keys">
+          <!-- <ng-multiselect-dropdown
+          [settings]="dropdownSettings"
+          [data]="dropdownList"
+          placeholder=" "
+          class=" day selected-item"
+
+          ></ng-multiselect-dropdown> -->
+          <!-- <ng-select [items]="days" bindLabel="name" placeholder="Select No of days" appendTo="body" [multiple]="true" [(ngModel)]="selected"></ng-select> -->
+          <!-- <ejs-multiselect class="day" id='sample-list2' [dataSource]='days' [mode]='default' [fields]='fields' [placeholder]='waterMark'></ejs-multiselect> -->
+          {{ Days }}
+        </div>
+      </div>
+    </div>
+    <iv-newsletter-date-picker
+      class="datePicker"
+      *ngIf="inputSendOn"
+      (submitDays)="OnChangeDay($event)"
+    ></iv-newsletter-date-picker>
+  </div>
+  <div>
+    <div class="Recipients" (click)="openSendTime() ">
+      <div class="d-flex flex-row justify-content-between">
+        <label class="Text">Send Time</label>
+        <span class="icon-2 material-symbols-outlined"> arrow_drop_down </span>
+      </div>
+      <div class="SelectionChips">
+        <label for="" class="keys" *ngIf="inputTime">{{
+          displayTime.time
+        }}</label>
+      </div>
+    </div>
+    <div
+      class="inputTime"
+      *ngIf="inputSendTime"
+    >
+      <Label>Set Send Time:</Label>
+      <div>
+        <select
+          [(ngModel)]="displayTime.hour"
+          [ngModelOptions]="{ standalone: true }"
+          required
+        >
+          <option value="Hour" selected disabled>Hour</option>
+          <option *ngFor="let hour of hours">{{ hour }}</option>
+        </select>
+        <select
+          [(ngModel)]="displayTime.minute"
+          [ngModelOptions]="{ standalone: true }"
+          required
+        >
+          <option value="Minutes" default>Minutes</option>
+          <option *ngFor="let minute of minutes" [value]="minute">
+            {{ minute }}
+          </option>
+        </select>
+        <select
+          [(ngModel)]="displayTime.ampm"
+          [ngModelOptions]="{ standalone: true }"
+        >
+          <option value="">AM/PM</option>
+          <option value="AM">AM</option>
+          <option value="PM">PM</option>
+        </select>
+        <button
+          (click)="displayTime.time = formatTime()"
+          class="btn btn-primary"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+    <div class="Recipients">
+      <div class="d-flex flex-row justify-content-between">
+        <label class="Text">Publish as</label>
+        <span class="icon-2 material-symbols-outlined"> arrow_drop_down </span>
+      </div>
+      <div class="SelectionChips">
+        <label for="" class="keys">HTML</label>
+      </div>
+    </div>
+  </div>
+ </form>
+  <div class="d-flex flex-column titleArticle">
+    <iv-newletters-title
+    *ngIf="select; else createNew"
+      (newsLetterTitle)="OnNewsLetterTitle($event)"
+    ></iv-newletters-title>
+
+    <iv-news-articles
+      [newsArticlesData]="newsLetterResponse"
+      (inputChanged)="onInputChanged($event)"
+    ></iv-news-articles>
+    <iv-pager></iv-pager>
+  </div>
+</div>
+<ng-template #createNew >
+      <div class="staticScreen">
+      Select a saved search to create NewsLetter
+    </div>
+    </ng-template>

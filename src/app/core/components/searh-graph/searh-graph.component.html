@@ -1,0 +1,42 @@
+
+<div class="dark-grey-text  " id="dgraph" #dgraph>
+  <div class="mb-4"> Result Over Time</div>
+  <div class="toggle-menu">
+    <mat-button-toggle-group class="toggle " #toggleBtn="matButtonToggleGroup" >
+        <mat-button-toggle class="tre " value="Toggle Button 1" (click)="changetoLine()" checked>
+             Trendline
+        </mat-button-toggle>
+        <mat-button-toggle class="tre" value="Toggle Button 2" (click)="changetoBar()" >
+            Bar
+        </mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <button
+    class="matmen "
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    
+  >
+    <mat-icon class="vert">more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item disabled="true">
+      <span class="down">Download as PPT</span>
+    </button>
+    <button mat-menu-item disabled="true">
+      <span class="down">Download as PDF</span>
+    </button>
+    <button mat-menu-item (click)="downloadpng1()">
+      <span class="down">Download as PNG</span>
+    </button>
+  </mat-menu>
+</div>
+<div class="flex">
+    <div class="flex-item">
+        <div style="display: block;">
+            <canvas id="graph" #graph baseChart width="1280" height="200" [data]="lineChartData" [options]="lineChartOptions"
+                [type]="lineChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+            </canvas>
+        </div>
+    </div>
+</div>

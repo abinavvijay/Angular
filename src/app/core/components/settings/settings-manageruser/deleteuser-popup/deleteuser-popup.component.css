@@ -1,0 +1,148 @@
+/* .back {
+  background-color: white;
+  border: 1px solid black;
+  width: 400px;
+  height: 300px;
+  
+} */
+
+.useraccess{
+    width: 176px;
+    height: 28px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.27;
+    letter-spacing: -0.44px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+  
+  .Ellipse-247 {
+    width: 36px;
+    height: 36px;
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 100%;
+    padding: 10px 0;
+    background-color: var(--brand-tm);
+  }
+  
+  .AC {
+    width: 36px;
+    height: 16px;
+    margin-left: 8px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: -0.28px;
+    text-align: center;
+    color: white;
+  }
+  
+  .Anuran-Chakraborty {
+    width: 126px;
+    height: 16px;
+    margin-left: 15px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-black);
+  }
+  
+  .anuranchakrabortyinfovisioncom {
+    width: 200px;
+    height: 16px;
+    margin-top: 18px;
+    margin-left: -125px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: var(--bw-grey-04);
+  }
+  
+  .drop{
+    margin-bottom: 10px;
+  }
+  .access{
+    width: 80px;
+    height: 16px;
+    margin-top: 40px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: -0.26px;
+    text-align: left;
+    color: var(--bw-grey-04);
+  }
+  
+  .formfield{
+    height: 3a4px;
+    width: 300px;
+    margin-top: 60px;
+    margin-left: -80px;
+  }
+  
+  .cancel {
+    width: 150px;
+  height: 44px;
+  border-radius: 4px;
+    background-color: rgb(179, 179, 246);
+    color: blue;
+    border: none;
+    margin-top: 40px;
+    margin-left: -4px;
+  }
+  
+  .update {
+    width: 150px;
+    height: 44px;
+    border-radius: 4px;
+    background-color: blue;
+    color: white;
+    border: none;
+    margin-top: -45px;
+    margin-left: 150px;
+    /* margin-bottom: 50px; */
+  }
+  
+  .name {
+    display: flex;
+    margin-left: 45px;
+    margin-top: -32px;
+  }
+  
+  .Are-you-sure-you-want-to-delete-this-user-All-data-created-by-this-user-will-be-lost {
+    width: 279px;
+    height: 32px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: var(--bw-grey-04);
+  }

@@ -1,0 +1,44 @@
+.query{
+  width: 280px;
+  flex-grow: 0;
+  margin: 16px 0 12px;
+  padding: 17px 18px 17px 12px;
+  border-radius: 4px;
+  border: solid 1px var(--bw-grey-01);
+  background-color: var(--bw-white);
+} 
+
+
+.mat-input-element{
+    width: 300px !important;
+    
+  }
+
+  .mat-form-field{
+    width: 280px !important;
+}
+
+.button{
+    width: 280px;
+  height: 52px;
+  flex-grow: 0;
+  
+  border-radius: 4px;
+  background-color: var(--brand-alpha-blue);
+  color:var(--bw-white)
+}
+
+p{
+    width: 117px;
+  height: 16px;
+  margin: 0 163px 16px 0;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: -0.26px;
+  text-align: left;
+  color: var(--bw-grey-04);
+}

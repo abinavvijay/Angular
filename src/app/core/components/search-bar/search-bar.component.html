@@ -1,0 +1,84 @@
+<!-- <p>search-bar works!</p>
+<button mat-button [matMenuTriggerFor]="menu">Simple Search</button>
+<mat-menu #menu="matMenu">
+    <button class="menu-item" mat-menu-item>
+        <div> Simple Search</div>
+        <span><span>New to this platform? Start Learning the charts with Simple Search</span><span>^</span></span>
+    </button>
+    <button class="menu-item" mat-menu-item>
+        <div> Advance Search</div>
+        <span><span>New to this platform? Start Learning the charts with Simple Search</span><span>^</span></span>
+    </button>
+    <button class="menu-item" mat-menu-item >
+        <div> Pro Search</div>
+        <span><span>New to this platform? Start Learning the charts with Simple Search</span><span>^</span></span>
+        
+    </button>
+</mat-menu> -->
+
+
+
+<div class=" p-4 pb-0 pt-0">
+    <div class="input-group mb-3">
+        <button mat-button class="menu-index search-button " [matMenuTriggerFor]="menu">{{buttonName}}</button>
+        <mat-menu #menu="matMenu" style="width: 500px">
+            <button class="menu-item" mat-menu-item (click)="setButton(0)">
+                <div> Simple Search</div>
+                <span><span>New to this platform? Start Learning the charts with Simple
+                        Search</span><span>^</span></span>
+            </button>
+            <button class="menu-item" mat-menu-item (click)="setButton(1)">
+                <div> Advance Search</div>
+                <span><span>New to this platform? Start Learning the charts with Simple
+                        Search</span><span>^</span></span>
+            </button>
+            <button class="menu-item" mat-menu-item (click)="setButton(2)">
+                <div> Pro Search</div>
+                <span><span>New to this platform? Start Learning the charts with Simple
+                        Search</span><span>^</span></span>
+            </button>
+        </mat-menu>
+        <form [formGroup]="form" (ngSubmit)="submit()" class="header-spacer" style=" margin-right: 0px !important; width:calc(100% - 150px)">
+            <ng-container *ngIf="type==0">
+                <div class="header-spacer" style="display: flex;">
+                    <input placeholder="Ex. Covid" formControlName="keyword" class="form-control seatch-text "
+                        style="width: calc(100%)" />
+                    <br />
+                    <button class="btn btn-primary search-button-primary">Search</button>
+                </div>
+            </ng-container>
+            <ng-container *ngIf="type==1">
+                <div class="header-spacer" style="display: flex;">
+                    <div placeholder="Ex. Covid"  class="form-control seatch-text "
+                        style="width: calc(100%)">
+                        Please use text boxes below to build your advance search
+                    </div>
+                    <button class="btn btn-primary search-button-primary">Search</button>
+                </div>
+                <div style="display: flex;">
+                <textarea placeholder="Ex. Covid"
+                    style="position:relative; left:-180px;  ; width: calc((33% + 60px));" formControlName="keyword"
+                    class="form-control mt-2  me-5 pe-4"></textarea>
+                <textarea placeholder="Ex. Covid"
+                    style="position:relative; left:-180px; width:calc((33% + 60px));" formControlName="include"
+                    class="form-control mt-2  me-5 pe-4"></textarea>
+                <textarea placeholder="Ex. Covid"
+                    style="position:relative; left:-180px; width:calc((33% + 60px));" formControlName="exclude"
+                    class="form-control mt-2 "></textarea>
+                </div>
+                </ng-container>
+            <ng-container *ngIf="type==2">
+                <div class="header-spacer" style="display: flex;">
+                    <div placeholder="Ex. Covid"  class="form-control seatch-text "
+                        style="width: calc(100%)">
+                        Please use textbox below to build your Pro search
+                    </div>
+                    <button class="btn btn-primary search-button-primary">Search</button>
+                </div>
+                <textarea placeholder="Ex. Covid" style="position:relative; left:-180px;" formControlName="keyword"
+                    class="form-control mt-2 " style="width: calc(100% + 180px)"></textarea>
+            </ng-container>
+
+        </form>
+    </div>
+</div>
